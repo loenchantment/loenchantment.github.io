@@ -6,7 +6,15 @@
             <h1>Test Page</h1>
             <p>This is scintillating content :)</p>
             <a href="https://fabfantasybooks.com">Here's a link to a site I made with WordPress</a>
-        </body>
+        
     
-    <footer>Copyright Me 2021, may it be a better year</footer>
+    <footer>
+        &Copy2021; Today's Date <span>id="current date"</span>
+    </footer>
+    <script>
+        //toLocalDateString
+        const options={weekday:'long', day:'numeric', month:'long', year:'numeric'};
+        document.getElementById('current date').textcontent= new Date ().toLocaleDateString('en-US', options)
+    </script>
+    </body>
 </html>
