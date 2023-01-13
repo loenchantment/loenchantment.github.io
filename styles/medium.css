@@ -1,0 +1,27 @@
+@media only screen and (min-width: 32.5em) {
+  body {
+    background-color: lime;
+  }
+
+  h1 {
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 35px;
+    font-family: 'Courgette', cursive;
+    /*the third number is the blur effect*/
+    text-shadow: 2px 2px 5px white;
+ }
+ 
+ h2 {
+     font-size: 30px;
+     font-family: 'Poppins regular', sans-serif;
+     padding-left: 18px;
+ }
+
+ ul li {
+ padding-top: 5px;
+ font-size: 22px;
+ }
+    
+}
