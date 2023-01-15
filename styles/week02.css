@@ -1,126 +1,128 @@
-/*body {
-   font-size: 16px;
-   font-family: "Poppins", sans-serif;
-   margin: 0;
-   padding: 0;
-   padding-top: 10px;
-   text-align: center;
-   width: 800px;
-   text-align: left;
-   border: 0px;
-   padding: 0;
-   margin: 0 auto;
-}
-*/
+
 /*phone view*/
 
 body {
-	max-width: 800px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
+	max-width: 1400px;
 	font-size: 0.8rem;
-    font-family: 'Poppins';
-}
-/*
-header {
-    background-color: #1d3557;
-    text-align: left;
-    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+	text-align: center;
+	margin: 0 auto;
 }
 
-h1 h2{
-    font-size: 50px;
+main {
+    margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+header {
+    background-color: #1d3557;
+    color: whitesmoke;
+    width: 100%;
     text-align: center;
 }
-*/
-header {
-    background-color: #1d3557;
-    color: whitesmoke;
-    max-width: 420px;
-    padding-left: 20px;
-}
 
-main section {
+main div {
 	margin: 0.3rem;
 	border: 1px solid #bbb;
 	padding: 10px;
 	background-color: #eee;
+	align-items: center;
 }
 
 h1{
     font-size: 2rem;
+	padding-top: 1.5rem;
+}
+
+h2 {
+	padding-bottom: 1.5rem;
 }
 h3 {
     background-color: #294B7A;
     color: whitesmoke;
+	text-align: center;
     font-size: 1rem;
-    padding: 1rem
+	font-weight: 600;
+    padding-top: 1rem;
+	padding-left: 1.5rem;
 }
 
 p {
    font-weight: 500; 
-   font-size: .8rem;
+   font-size: .90rem;
+   line-height: normal;
+   text-align: center;
+}
+
+
+.topborder-radius {
+	border-radius: 15px 15px 0 0;
+	background-color: #294B7A;
+}
+
+main section div {
+	margin: 0px;
 }
 
 
 
-
-
-/*main section h2 {
-	color: #536878;
+section a {
+	padding-top: 5px;
+	text-decoration: none;
+	color: black;
 }
-*/
+
+.content {
+	text-align: left;
+}
+
+
 img {
     max-width: 360px;
+	padding-top: 20px;
+}
+
+footer {
+    background-color: #1d3557;
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+	font-size: 12px;
+	color: whitesmoke;
+}
+
+#name {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#copyright {
+    padding-left: 30px;
+}
+
+
+/*medium size screens*/
+@media only screen and (max-width: 1400px) {
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+  
+    #medium{
+        grid-column: span 2;
+    }
 }
 
 
 
-
-
-/* Tablet Views ******************************
-@media only screen and (min-width: 37.5em) {
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	main section:nth-child(2) {
-		display: block;
-	}
-
-	main section:nth-child(3) {
-		grid-column: span 2;
-	}
-
-	main section picture {
-		display: block;
-	}
-	main section picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
+@media only screen and (max-width: 710px){
+    main{
+        grid-template-columns: 1fr;
+    }
+    #medium{
+        grid-column: span 1;
+    }
 }
 
-/* Desktop Views ****************************
-@media only screen and (min-width: 60em) {
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	
-	/* This is unncessary !!! The flow is set and the template is set already *
-	main section:nth-child(1) {
-	  grid-column: 1/2;
-  }
-	main section:nth-child(2) {
-	  grid-column: 2/3;
-		grid-row: 1/2;
-  }
-	/*************************************
-
-	main section:nth-child(3) {
-		grid-column: span 1;
-	}
-}
-*/
