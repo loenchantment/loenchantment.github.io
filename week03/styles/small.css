@@ -101,7 +101,40 @@ nav ul li a {
 main img {
     max-width: 65%;
     height: auto;
-    padding-left: 1em;
-    
+    padding-left: 1em; 
+}
+#jennifer {
+    background-color: #A7E4F1;
+    padding: 2em;
+    padding-top: 2.5em;
+}
+
+#fred {
+    background-color: #B6B0BF;
+    padding: 2em;
+    padding-top: 2.5em;
+}
+
+figcaption {
+    padding-top: .5em;
+    padding-left: 1.3em;
+    font-size: .75em;
+}
+
+figure img {
+    max-width: 60%;
+    height: auto;
+}
+
+div ul {
+    padding-left: 2em;
+}
+
+div ul li {
+    padding-bottom: 1em;
+}
+
+#scenariopic {
+    padding: 2em;
 }
 
