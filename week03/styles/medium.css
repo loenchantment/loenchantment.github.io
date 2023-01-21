@@ -1,0 +1,49 @@
+@media only screen and (min-width: 37.5em) {
+    
+    header,
+    nav,
+    main,
+    footer {
+	   max-width: 975px;
+	   margin: 0 auto;
+   }
+
+
+	h1 {
+		font-size: 2em;
+	}
+
+
+
+    nav ul { display: flex; }
+    nav ul li { flex: 1 1 auto; } 
+
+
+
+   
+
+    #logotop {
+        max-width: 50%;
+        height: auto;
+      }
+
+    main img {
+        max-width: 75%;
+        height: auto;
+        padding-left: 1em;
+        
+    }
+
+    main div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2em;
+    }
+
+    p {
+        font-size: 1.15em;
+        margin-top: -.85em;
+        margin-right: 2em;
+    }
+
+}

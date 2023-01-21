@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+	font-family: "Poppins", sans-serif;
+}
+
+
+header,
+footer {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	/*border: 1px solid rgba(0, 0, 0, 0.2);*/
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 767px;
+	margin: 0 auto;
+}
+
+header {
+    background-color: #A7E4F1;
+}
+
+footer {
+    background-color: #00003D;
+    color: whitesmoke;  
+}
+
+h1, h2 {
+    font-family: "forum", sans-serif;
+    color: #00003d;
+}
+
+h1{
+    font-size: 2em;
+}
+p, h2 {
+    margin: 1em;
+}
+
+p {
+    line-height: 1.6;
+    color: #00003d;
+}
+
+span {
+    font-size: .75em;
+    margin-left: .25em;
+}
+
+div{
+    margin-top: 2em;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+    background-color: #B6B0BF;
+}
+
+nav ul li a {
+	display: block;
+	color: #00003d;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 1.25rem;	
+    font-weight: 800;
+}
+
+.name {
+    font-size: .9em;
+}
+
+#copyright {
+    font-size: .75em;
+    padding: .75em;
+}
+
+#datemod, #document {
+    font-size: .75em;
+    padding: .75em;
+}
+
+#logotop {
+  max-width: 40%;
+  height: auto;
+}
+
+main img {
+    max-width: 65%;
+    height: auto;
+    padding-left: 1em;
+    
+}
+
