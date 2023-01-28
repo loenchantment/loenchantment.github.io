@@ -1,0 +1,165 @@
+/*This aligns the content in the center of the page*/
+* {
+	margin: 0;
+	padding: 0;
+	/*box-sizing: border-box;*/
+}
+
+body {
+	font-size: 18px;
+	font-family: "Poppins", sans-serif;
+}
+
+
+header {
+	background-color: paleturquoise;
+	padding: 5px 0;
+	/*display: flex;*/
+	align-items: center;
+	justify-content: space-between;
+	max-width: 900px;
+	margin: 0 auto;
+	border-bottom: 1px solid #bbb;
+}
+
+.header-contents {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 400px;
+	margin-bottom: 20px;
+	padding-top: 1em;
+}
+
+#top_logo {
+	max-width: 12em;
+	height: auto;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.social_icon{
+	max-width: 1.5em;
+	height: auto;
+	/*padding-left: .5em;*/
+}
+
+.date {
+	padding: .5em;
+	font-size: small;
+}
+/*
+header section {
+	
+font-size: 1em;
+padding-left: .5em;
+	
+}
+*/
+  /*this makes the hamburger menu*/
+  
+
+
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: darkgrey;
+}
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	padding-right: 2rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+#menu::before {
+	content: "≡";
+	font-size: 2rem;
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+
+.responsive li {
+	display: block;
+}
+
+.responsive #menu::before {
+	content: "X";
+}
+
+header h1 {
+    display: none;
+}
+
+main div{
+	padding: 4em;
+	background-color: #bbb;
+	border-style: solid;
+	border-width: .1em;
+	display: flex;
+	align-items: flex-start;
+}
+
+h2 {
+	padding: none;
+	font-size: 1em;
+}
+
+section {
+	display: flex;
+	align-content: center;
+	/*background-color: lime;*/
+	padding: 2em;
+	border-style: solid;
+	border-width: .1em;
+
+}
+
+ footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+	margin-bottom: 20px;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	font-size: .75em;
+}
+
+#logo_bottom {
+	max-width: 12em;
+	height: auto;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+footer img {
+    max-width: 2em;
+	height: auto;
+}
+
+
+
+
+
+
