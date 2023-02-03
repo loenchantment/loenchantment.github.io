@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: Acme, Arial, sans-serif;
+}*/
+header {
+    background-color: #BFAED5;
+    padding: 2em;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: .1em;
+	box-shadow: 3px 3px 5px #5E548E;
+	font-family: 'Courgette', serif;
+
+	/*width: 100%; */ 
+}
+
+header img {
+	display: none;
+}
+
+h1{
+	text-shadow: 3px 3px 5px #5E548E;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+
+/*
+h1 {
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+/*
+h2 {
+    background-color: white;
+    border: none;
+	margin-right: -10em;
+ }*/
+
+div {
+	
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/*background-color: pink;*/
+	padding: 10em 2em 10em 2em;
+
+
+}
+
+
+
+main {
+	background-color: #ddd;
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+	box-shadow: 3px 3px 5px #5E548E;
+}
+
+label {
+	padding: 1.2em;
+}
+
+input,
+button {
+	padding: 0.5rem;
+}
+
+button {
+	margin: 0.5rem;
+	box-shadow: 3px 3px 5px #5E548E;
+}
+
+.delete {
+	width: fit-content;
+}
+
+.input {
+	display: flex;
+	gap: 1rem;
+}
+
+.list {
+	padding: 0.5rem;
+}
+
+ul {
+	margin: 1rem;
+	list-style: none;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer {
+	background-color: #BFAED5;
+	padding: 2em;
+	box-shadow: 3px 3px 5px #5E548E;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: .5em;
+	font-weight: bold;
+}
+
+#name {
+	padding-right: .8em;
+	padding-left: .2em;
+}
+
+
+@media only screen and (min-width: 675px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	main {
+		width: 320px;
+	}
+    
+	header {
+	display: flex;
+    flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+header img {
+	display: flex;
+    width: 5em;
+    height: auto;
+	padding-left: 2em;
+}
+
+#picleft {
+	display: flex;
+	padding-left: 0;
+	padding-right: 2em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+footer {
+	font-size: 1em;
+}
+   
+}
