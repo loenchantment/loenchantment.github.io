@@ -10,16 +10,35 @@ body {
 	font-family: "Poppins", sans-serif;
 }
 
+.banner {
+	display: block;
+	font-size: 1em;
+	background-color: #1d97af;
+	color: white;
+	padding-top: 1em;
+}
 
+.banner_stuff {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+/*
+.banner_stuff p {
+	display: flex;
+
+}*/
 header {
-	background-color: paleturquoise;
-	padding: 5px 0;
+	background-color: #DCF4F9;
+	/*padding: 5px 0;*/
+	position: relative;
 	/*display: flex;*/
 	/*align-items: center;
 	justify-content: space-between;
 	max-width: 900px;
 	margin: 0 auto;
 	border-bottom: 1px solid #bbb;*/
+
 }
 
 .header-contents {
@@ -34,7 +53,7 @@ header {
 #top_logo {
 	max-width: 12em;
 	height: auto;
-	padding-left: .5em;
+	padding-left: 1em;
 	padding-right: .5em;
 }
 
@@ -44,9 +63,14 @@ header {
 	/*padding-left: .5em;*/
 }
 
+.socials {
+	padding-right: .5em;
+}
+
 #datebox {
-	background-color: darkblue;
+	background-color: #00003D;
 	padding: .3em;
+	margin-top: 1.5em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -66,13 +90,18 @@ padding-left: .5em;
 }
 */
   /*this makes the hamburger menu*/
-  
+  /*by setting the header position to relative and the nav to absolute, the
+  nav box can cover the rest of the header when checked. Then I can expand it's size to make
+  the buttons easier to use*/ 
 
 
 nav {
 	margin: 0 auto;
 	max-width: 760px;
-	background-color: darkgrey;
+	background-color: #B6B0BF;
+	position: absolute;
+	top: 15px;
+	right: 25px;
 }
 .navigation {
 	list-style: none;
@@ -88,13 +117,13 @@ nav {
 .navigation a {
 	display: block;
 	padding: 0.75rem;
-	padding-right: 2rem;
 	text-align: left;
 	text-decoration: none;
-	color: black;
+	color: #00003D;
 	font-weight: 700;
+	font-size: 2em;
 	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+	/*font-size: clamp(1rem, 2vmin, 1.5rem);*/
 }
 
 #menu::before {
@@ -104,12 +133,15 @@ nav {
 
 .navigation a:hover, navigation a:active {
 	color: white;
-	background-color: black;
+	background-color: #00003D;
 }
 
 
 .responsive li {
 	display: block;
+	/*this makes the navigation links larger after they're clicked*/
+	padding: 3em;
+	font-size: 1em;
 }
 
 .responsive #menu::before {
@@ -121,25 +153,91 @@ header h1 {
 }
 
 main div{
-	padding: 4em;
-	background-color: #bbb;
+	padding: 2em;
+	background-color:#cbc7d1;
 	border-style: solid;
+	border-color: #00003D;
 	border-width: .1em;
 	display: flex;
+	flex-direction: column;
 	margin: .5em;
+	color:#00003D;
 	/*max-width: 380px;*/
 }
 
+#hero {
+	background-color:transparent;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr; 
+	/*row-gap: 50px;*/
+	/*justify-items: end;
+	align-content: end;*/
+	padding: 0px;
+	border-style: none;
+
+}
+
+#heroimg {
+	max-width: 365px;
+	height: auto;
+	grid-column: 1/5;
+	grid-row: 1/4;
+}
+
+#hero h2 {
+	padding: 0px;
+	margin: 0px;
+	font-family: "forum, serif";
+	font-size: 1.5em;
+	grid-column: 1/5;
+	grid-row: 1/2;
+	align-self: flex-start;
+	padding-top: 1em;
+	padding-left: .5em;
+	text-shadow: 2.5px 2.5px 6px  #DCF4F9;
+}
+
+#hero p {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    background-color: #B6B0BF;
+	align-self: center;
+	padding-top: .7em;
+	/*padding-right: .7em;*/
+	padding-left: 1em;
+	border-radius: .7em 0em 0em .7em;
+	opacity: .9;
+    box-shadow: 2.5px 2.5px 3px 2px #DCF4F9;
+	font-size: .85em;
+}
 
 
 .container h2 {
 	/*background-color: lavenderblush;*/
-	font-size: .7em;
+	font-size: 1.5em;
 	font-weight: bold;
-	margin-top: -5em;
+	/*margin-top: -5em;
 	margin-left: -5em;
-	margin-bottom: 4em;
+	margin-bottom: 4em;*/
+	padding-bottom: 1em;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
 
+}
+
+.container p {
+	display: flex;
+	align-self: center;
+}
+
+#event figure {
+	display: none;
+}
+
+#event img {
+	max-width: 20em;
 }
 
 /*container for spotlight containers*/
@@ -158,9 +256,12 @@ main div{
 #spotlight1, #spotlight2{
 	/*background-color: aqua;*/
 	padding: 4em;
-	padding-bottom: none;
 	border-style: solid;
 	border-width: .1em;
+}
+
+#spotlight3 {
+	display: none;
 }
 
 /*headings in spotlight*/
@@ -172,19 +273,25 @@ main div{
 }
 
 
-
-
-
-
- footer{
+ footer div{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	width: 400px;
-	margin-bottom: 20px;
-	padding-top: 1em;
+	/*margin-bottom: 20px;*/
+	font-size: .8em;
+	line-height: 1em;
+}
+
+footer {
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+	background-color: #b6b0bf;
+	padding-top: 2em;
 	padding-bottom: 2em;
-	font-size: .75em;
+	font-weight: bold;
 }
 
 #logo_bottom {
@@ -199,8 +306,32 @@ footer img {
 	height: auto;
 }
 
+footer div img, p, a span {
+	padding-bottom: 1em;
+} 
+
+#datemod, #name {
+	padding: .5em;
+}
 .hidden {
 	display: none;
+}
+
+
+
+/*tablet screen width rules*/
+/*
+@media only screen and (min-width: 650px) {
+
+
+
+
+
+
+
+
+
+
 }
 
 
