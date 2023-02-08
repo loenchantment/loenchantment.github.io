@@ -79,7 +79,9 @@ figcaption {
 	padding-top: .5em;
 }
 
-
+#weather div {
+	padding: 0em;
+}
 
 
 	

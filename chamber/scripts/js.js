@@ -13,6 +13,15 @@ copyright.textContent = `© ${new Date().getFullYear()}`;
 let text = document.lastModified;
 document.getElementById("datemod").innerHTML = text;
 
+/*banner script*/
+
+const banner = document.querySelector(".banner");
+
+if (now.getDay() == 1 || now.getDay() == 2)  {
+    banner.style.display = "block";
+}
+  
+
 // Store the selected elements that we are going to use. 
 const mainnav = document.querySelector('.navigation')
 const hambutton = document.querySelector('#menu');
@@ -21,15 +30,24 @@ const hambutton = document.querySelector('#menu');
 // When clicked, the <ul class="navigation">'s class list toggle'
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
-/*I tried working on this for longer than I care to admit :(
+/*weather widget code*/
 
-const banner = document.querySelector(".banner");
-const today = new Date().getDay();
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 
-if (today = 6) {
-    banner.style = display: block;
-}
-  */  
+
+
+ 
+
+
+
+
+
+
+
+
+
+
 
 
  

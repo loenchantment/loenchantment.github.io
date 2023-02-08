@@ -9,7 +9,8 @@ const button = document.querySelector('button');
 /*this adds the favorite chapters by adding an event listener creating the 
 list items from the input*/
 button.addEventListener('click', () => {
-    const favchap = input.value;
+    let favchap = input.value;
+    if  (input.value.length >=1) {
     input.value = '';
 
     const listItem = document.createElement('li');
@@ -29,7 +30,7 @@ button.addEventListener('click', () => {
       input.focus();
     
       
-    });
+    }});
 
 
     /*const currentYear = new Date().getFullYear();*/
@@ -40,3 +41,10 @@ copyright.textContent = `© ${new Date().getFullYear()}`;
 
 let text = document.lastModified;
 document.getElementById("datemod").innerHTML = text;
+
+
+ 
+
+
+
+;

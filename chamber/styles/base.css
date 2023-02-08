@@ -11,7 +11,7 @@ body {
 }
 
 .banner {
-	display: block;
+	display: none;
 	font-size: 1em;
 	background-color: #1d97af;
 	color: white;
@@ -240,6 +240,17 @@ main div{
 	max-width: 20em;
 }
 
+#weather div {
+	background-color:  #DCF4F9;
+	border: none;
+}
+
+h3 {
+	padding: .5em;
+}
+
+
+
 /*container for spotlight containers*/
 .spotlights {
 	display: block;
@@ -295,7 +306,7 @@ footer {
 }
 
 #logo_bottom {
-	max-width: 12em;
+	max-width: 20em;
 	height: auto;
 	padding-left: .5em;
 	padding-right: .5em;
