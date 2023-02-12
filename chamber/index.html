@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/desktop.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Poppins&display=swap" rel="stylesheet">
@@ -32,7 +31,7 @@
         </div>
         <header>
          <div class="header-contents">
-           <img src="images/default-monochrome.svg" alt="sailing ship logo" id="top_logo">
+           <img src="images/icon-webp'd.webp" alt="sailing ship logo" id="top_logo">
            <h1>Sturgeon Bay, WI Chamber of Commerce</h1>
              <div class="socials">
               <a href="https://www.facebook.com/" target="_blank" ><img src="images/icons8-facebook-240.png" alt="facebook logo" class="social_icon"></a>
@@ -58,9 +57,14 @@
         </header>
         <main>
             <div class="container" id="hero">
-                <img src="images/hero_smaller.jpg" id="heroimg" alt="view of Sturgeon Bay at sunset">
-                <h2>Welcome to Sturgeon Bay...</h2>
-                <p>Join the Chamber</p>
+                <img src="images/hero_smaller.jpg" id="heroimgreal" alt="view of Sturgeon Bay at sunset">
+                <picture id="crazy">
+                    <source media="(min-width: 1200px)" srcset="images/templg2.jpg">
+                    <source media="(min-width: 600px)" srcset="images/wdd230-org-650px.jpg">
+                    <img src="images/wdd230-org-400px.jpg" alt="three people sitting at work table" id="temppic">
+                </picture>
+                <h2 id="welcome">Welcome to Sturgeon Bay...</h2>
+                <p id="herojoin">Join the Chamber</p>
             </div>
 
             <div class="container" id="event">
@@ -77,10 +81,14 @@
 
             <div class="container" id="weather">
                 <h2>Weather</h2>
-                <div>
-                    <a class="weatherwidget-io" href="https://forecast7.com/en/44d83n87d38/sturgeon-bay/?unit=us" data-label_1="STURGEON BAY" data-icons="Climacons Animated" 
-                    data-mode="Current" data-theme="original" >STURGEON BAY</a>
-                </div>
+                <figure>
+                  <img src="images/icons8-sun-100.png" alt="sun icon" id="sunicon">
+                  <figcaption><a target="_blank" href="https://icons8.com/icon/111603/sun">Sun</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></figcaption>
+                </figure>
+                 <p class="weatherinfo">Current Temp is: <span id="temp">10</span> degrees</p>
+                 <p class="weatherinfo">Wind Speed is: <span id="speed">25 </span> mph</p>
+                 <p class="weatherinfo">Wind Chill: <span id="chill"> </span> </p>
+               
             </div>
 
             <div class="container" id="news">
@@ -110,11 +118,11 @@
 
     <footer>
         <div>
-          <img src="images/default-monochrome.svg" alt="sailing ship logo" id="logo_bottom">
+          <img src="images/icon-webp'd.webp" alt="sailing ship logo" id="logo_bottom">
           <p>1766 Main Street</p>
           <p>Sturgeon Bay, WI 54235</p>
           <p>1 (920)-000-0000</p>
-          <a href="https://www.google.com/maps/place/Sturgeon+Bay,+WI+54235/@44.826206,-87.3990308,13z/data=!3m1!4b1!4m6!3m5!1s0x881d49691c8e862b:0x26797d9268b6f036!8m2!3d44.8341639!4d-87.3770419!16zL20vMDJtMDAy" target="_blank" ><img src="images/icons8-map-pin-100.png" alt="map pin icon"></a>
+          <a href="https://www.google.com/maps/place/Sturgeon+Bay,+WI+54235/@44.826206,-87.3990308,13z/data=!3m1!4b1!4m6!3m5!1s0x881d49691c8e862b:0x26797d9268b6f036!8m2!3d44.8341639!4d-87.3770419!16zL20vMDJtMDAy" target="_blank" ><img src="images/icons8-map-pin-100.png" alt="map pin icon" id="pin"></a>
           <span id="copyright"></span><span id="name">Becky Jacobs</span>
           This document was last modified: <span id="datemod"></span> 
       </div>

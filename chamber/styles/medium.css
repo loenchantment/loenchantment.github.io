@@ -16,6 +16,12 @@ main {
 	grid-column: 1/4;
 	grid-row: 1/2;
 }
+/*
+#heroimg {
+	max-width: 100%;
+}*/
+
+
 
 #news {
 	grid-column: 1/4;
@@ -28,7 +34,7 @@ main {
 }
 
 .hidden {
-	display: grid;
+	display: flex;
 }
 
 #join {
@@ -62,11 +68,11 @@ main {
 #spotlight3 {
 	display: none;
 }
-
+/*
 #heroimg {
 	max-width: 613px;
 
-}
+}*/
 
 #event figure {
 	display: flex;
@@ -82,6 +88,9 @@ figcaption {
 #weather div {
 	padding: 0em;
 }
+
+
+
 
 
 	
