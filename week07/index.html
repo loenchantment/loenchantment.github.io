@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Week 07 WDD 230: Lazy Loading, by Becky Jacobs">
+    <meta name="author" content="Becky Jacobs">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins&display=swap" rel="stylesheet"> 
+    <title>Becky Jacobs: Week 07 Lazy Loading</title>
+    </head>
+    <body>
+       <main>
+         <h1>Lazy Picture Loading by Becky Jacobs</h1>
+         <picture>
+           <img src ="images/blank.jpg" data-src="images/dulce-rad.jpg" alt="sleepy cat" loading="lazy">
+         </picture>
+         <picture>
+            <img src ="images/blank.jpg" data-src="images/enochtreereal.jpg" alt="man by Christmas tree" loading="lazy">
+          </picture>
+          <picture>
+            <img src ="images/blank.jpg" data-src="images/momanddad.jpg" alt="husband and wife playing a board game" loading="lazy">
+          </picture>
+          <picture>
+            <img src ="images/blank.jpg" data-src="images/nativitysm.jpg" alt="angel and wise man figurines" loading="lazy">
+          </picture>
+          <picture>
+            <img src ="images/blank.jpg" data-src="images/santaalmost.jpg" alt="santa display" loading="lazy">
+          </picture>
+
+       </main>  
+      <footer>
+        <span id="copyright"></span><span id="name">Becky Jacobs</span>
+        This document was last modified: <span id="datemod"></span>   
+      </footer>
+
+      <script src="js/js.js"></script>
+    </body>
+</html>

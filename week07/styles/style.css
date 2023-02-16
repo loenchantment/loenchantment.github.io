@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    border: 0px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Courgette', sans-serif;
+}
+
+footer {
+    padding: 2em;
+}
+
+/*this adds the blur to image loading*/
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 2s;
+  }
+  
