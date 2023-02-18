@@ -3,6 +3,8 @@
 	margin: 0;
 	padding: 0;
 	/*box-sizing: border-box;*/
+	/*align-items: center;*/
+
 }
 
 body {
@@ -363,8 +365,98 @@ footer div img, p, a span {
 	display: none;
 }
 
+/*discover page styles*/
+
+.discovermain {
+	height: auto;
+    /*padding: 1rem;*/
+    /*background-color:aquamarine;*/
+    /*margin-top: 1em;*/
+   /*	display: flex;
+	flex-wrap: wrap;*/
+	justify-content: center;
+}
+
+.discoverdiv {
+	
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	
+}
+
+picture {
+	display: flex;
+	justify-content: center;
 
 
+}
+
+.discoversec {
+	padding: 2em;
+    background-color: #cbc7d1;
+    border-style: solid;
+    border-color: #00003D;
+    border-width: 0.1em;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    color: #00003D
+}
+
+.discoverp {
+	font-size: .85em;
+	padding-top: .5em;
+}
+
+#discoverh2 {
+	padding-bottom: .7em;
+	font-size: 1.4em;
+	/*font-family: "Forum, serif";*/
+	align-self: center;
+}
+
+section p {
+	line-height: 1.7em;
+	padding-top: .5em;
+}
+
+.discoverh3 {
+	align-self: center;
+	justify-self: center;
+}
+
+.discoverh3 {
+	align-self: center;
+}
+#info2, #info3, #info4, #info5 {
+	display: none;
+}
+
+#edu_demo_hous {
+	display: none;
+}
+
+.museum {
+	display: none;
+}
+
+/*image lazyloading*/
+/*this adds the blur to image loading*/
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 3s;
+  }
+
+  .visitlabel {
+    padding: 2em;
+    background-color:#DCF4F9 ;
+	border-radius: .2em;
+   }
 
 
 

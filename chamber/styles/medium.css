@@ -15,11 +15,16 @@ main {
 #hero {
 	grid-column: 1/4;
 	grid-row: 1/2;
+	/*display: flex;
+	justify-content: center;
+	position: relative;*/
 }
-/*
+
+
+
 #heroimg {
-	max-width: 100%;
-}*/
+	min-width: 100%;
+}
 
 
 
@@ -89,9 +94,86 @@ figcaption {
 	padding: 0em;
 }
 
+/*style for discover page*/
 
 
+#info2, #info3, #info4, #info5 {
+	display: flex;
+	justify-self: center;
+	align-content: center;
+}
 
 
+.main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+.discovermain {
+	grid-column: 1/2;
+	grid-row: 1/6;
+}
+
+.discoversec p{
 	
+	align-self: center;
+}
+
+#history {
+	grid-column: 2/4;
+	grid-row: 1/2;
+}
+#museum {
+	padding-top: 5em;
+}
+
+#info1 {
+	
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+#info2 {
+	
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+#info3 {
+	
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+#info4 {
+	
+	grid-column: 3/4;
+	grid-row: 3/4;
+}
+
+#info5 {
+	
+	grid-column: 2/4;
+	grid-row: 4/6;
+}
+
+#edu_demo_hous {
+	display: flex;
+}
+
+.museum {
+	display: flex;
+	
+}
+
+.hover:hover {
+	box-shadow: 0 0 50px #6692ac;
+}
+
+.visitlabel {
+    padding: 2em;
+    background-color:#DCF4F9 ;
+	border-radius: .2em;
+   }
 }
