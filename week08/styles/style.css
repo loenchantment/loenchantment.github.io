@@ -1,0 +1,56 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: "Poppins", sans-serif;
+}
+
+tr td {
+    border: 1px solid;
+}
+
+th, td {
+    text-align: left;
+    padding: 2em;
+}
+
+td {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+tr:nth-child(even){
+    background-color: lightsteelblue;
+    color: black;
+}
+
+th {
+    background-color: lightsteelblue;
+}
+
+.lefty {
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+.head2 {
+    background-color: aliceblue;
+    font-size: 1.2em;
+    border: 1px solid;
+}
+
+.colormatch {
+    background-color: lightsteelblue;
+    font-size: 1.2em;
+  
+}
+
