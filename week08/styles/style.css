@@ -5,6 +5,7 @@
 
 caption {
     caption-side: bottom;
+    padding-top: .5em;
 }
 
 table {
@@ -17,7 +18,7 @@ tr td {
 }
 
 th, td {
-    text-align: left;
+    text-align: center;
     padding: 2em;
 }
 
