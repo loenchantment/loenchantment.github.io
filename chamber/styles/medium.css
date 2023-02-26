@@ -176,4 +176,82 @@ figcaption {
     background-color:#DCF4F9 ;
 	border-radius: .2em;
    }
+
+
+/*--------------styles for thanks page-----------*/
+
+.thanksmed{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+.thanksmessage {
+	grid-column: 1 / 4;
+	
+	/*grid-row: 1/2;*/
+}
+
+.left-sidebar {
+	grid-column: 1/4;
+	/*grid-row: 2/3;*/
+}
+
+
+#downtownlg {
+	max-width: 600px;
+	height: auto;
+	margin-bottom: 5em;
+	box-shadow: 5px 5px 3px #555;
+	margin-top: -150px;
+
+}
+
+#testimonials {
+	display: flex;
+	grid-column: 1/4;
+	box-shadow: 5px 5px 3px #555;
+	margin-bottom: 5em;
+	border: none;
+	/*grid-row: 4/6;*/
+
+}
+
+/*------------Join Page Styles---------*/
+#tablefix {
+	display: grid;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+}
+
+
+th, td {
+    padding: .65em;
+}
+
+td {
+    font-size: 1em;
+}
+
+.lefty {
+    font-size: 1.8em;   
+}
+
+.head2 {
+    font-size: 1.1em; 
+}
+
+.colormatch {
+    font-size: 1.8em;
+}
+
+.formheader {
+  
+    margin-top: 2em;
+    margin-bottom: -1em;
+   
+}
+
+
 }

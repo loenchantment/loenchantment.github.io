@@ -365,7 +365,7 @@ footer div img, p, a span {
 	display: none;
 }
 
-/*discover page styles*/
+/*****************discover page styles****************/
 
 .discovermain {
 	height: auto;
@@ -458,7 +458,239 @@ img {
 	border-radius: .2em;
    }
 
+/*---------------styles for join page-------------------*/
+   .center {
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.maintable {
+	padding: 0 2%;
+	min-height: 20rem;
+
+}
+
+#tablefix {
+	display: none;
+	padding: 0em;
+	background-color: transparent;
+	border: none;
+	margin-top: 2em;
+}
+
+/*table styles*/
+
+caption {
+    caption-side: bottom;
+    padding-top: .5em;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: "Poppins", sans-serif;
+	/*max-width: 400px;*/
+}
+
+tr td {
+    border: 1px solid;
+}
+
+th, td {
+    text-align: center;
+    padding: .5em;
+}
+
+td {
+    font-size: .75em;
+    font-weight: bold;
+}
+
+
+tr:nth-child(even){
+    background-color: lightsteelblue;
+    color: black;
+}
+
+th {
+    background-color: lightsteelblue;
+}
+
+.lefty {
+    text-align: center;
+    font-size: .9em;
+    
+}
+
+.head2 {
+    background-color: aliceblue;
+    font-size: .9em;
+    border: 1px solid;
+}
+
+.colormatch {
+    background-color: lightsteelblue;
+    font-size: 1.2em;
+  
+}
+
+.maintable {
+	display: block;
+}
+
+/*-------------Form styles-----------------*/
+
+.formheader {
+	font-size: 1.5em;
+	padding-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: -1em;
+	color: #146a7b;
+	
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 2px solid #146a7b;
+    border-radius: 10px;
+    padding: .5rem 2%;
+
+}
+
+form legend {
+    color: #146a7b;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+	padding-bottom: .5rem;
+    color: #146a7b;
+    font-size: 1rem;
+}
+
+form label.top {
+	padding-bottom: 1rem;
+}
+
+.formlabelpad {
+	padding-bottom: .5em;
+	background-color: lime;
+
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: 1rem;
+    color:#555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color:#DCF4F9;
+    color:#00003D;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+	box-shadow: 10px 10px 5px #555;
+	font-size: 1.5em;
+}
+
+form label.top input:required {
+    border-left: #ad471f solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: #146a7b solid 6px;
+}
+
+
+.tell input {
+	padding: 3rem;
+	width: 30em;
+	height: 30em;
+
+}
+
+textarea.tell {
+	padding-top: 1em;
+	padding-left: 1em;
+	border: none;
+	outline: none;
+}
+
+#formlabelpad {
+	padding-bottom: 2em;
+	background-color: lime;
+	color: pink;
+
+}
+
+.hidden2 {
+	display: none;
+}
+
+
+
+/*------------Thank you page styles-------*/
+.thanksmessage {
+	background-color: #00003d;
+	color: whitesmoke;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-bottom: 4em;
+	padding-right: 2em;
+	font-size: 1.2em;
+	border-style: none;
+	box-shadow: 10px 10px 5px #555;
+	margin-top: 5em;
+	margin-bottom: 10em;
+}
+
+#thanks{
+	padding-bottom: 2em;
+}
+
+#downtownlg {
+	max-width: 23rem;
+	height: auto;
+	margin-bottom: 5em;
+	box-shadow: 5px 5px 3px #555;
+
+}
+
+
+
+
+
+
+/*this adds the blur to image loading*/
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 2s;
+  }
+#testimonials {
+	display: none;
+}
 
 
 
