@@ -29,7 +29,7 @@ async function getProphetData() {
       birth.textContent = `Birth: ${prophet.birthdate} in ${prophet.birthplace}`;
       death.textContent = `Death: ${prophet.death}`;
       children.textContent = `Children: ${prophet.numofchildren}`;
-      service.textContent = `Length of Service: ${prophet.length}`;
+      service.textContent = `Length of Service: ${prophet.length} years`;
 
       // Build the image portrait by setting all the relevant attribute
       portrait.setAttribute('src', prophet.imageurl);
