@@ -1,4 +1,4 @@
-const link = '/data.json';
+const link = '';
 async function getDirectoryData() {
     const response = await fetch(link);
     const data = await response.json();
