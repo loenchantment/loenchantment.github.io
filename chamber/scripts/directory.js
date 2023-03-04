@@ -21,8 +21,7 @@ async function getDirectoryData() {
        let hours = document.createElement(`p`);
        let website = document.createElement(`a`);
        let image = document.createElement('img');
- 
-       
+      
 
       // Build the image portrait by setting all the relevant attribute
         image.setAttribute('src', business.imageurl);

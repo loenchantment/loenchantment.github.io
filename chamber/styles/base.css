@@ -734,12 +734,12 @@ div.cards a {
 	  
 	  /* visited link */
 	div.cards a:visited {
-		color: #E07A52;
+		color: #1D97AF;
 	  }
 	  
 	  /* mouse over link */
 	div.cards a:hover {
-		color: #1D97AF;
+		color: #E07A52;
 	  }
 	  
 	  /* selected link */
@@ -778,7 +778,10 @@ div.cards  p{
  margin: 0 auto;
 }
 
-
+.cardsmain button {
+	background-color: lime;
+	padding: 5em;
+}
 
 
 
