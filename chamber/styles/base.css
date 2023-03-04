@@ -154,7 +154,7 @@ header h1 {
     display: none;
 }
 
-main div{
+.container, .spotlights{
 	padding: 2em;
 	background-color:#cbc7d1;
 	border-style: solid;
@@ -416,7 +416,7 @@ picture {
 	align-self: center;
 }
 
-section p {
+.discovcont {
 	line-height: 1.7em;
 	padding-top: .5em;
 }
@@ -691,6 +691,93 @@ img {
 #testimonials {
 	display: none;
 }
+
+/*****************styles for directory page*****************/
+h1{
+    font-family: 'forum';
+    font-size: 2.5em;
+   align-self: center;
+}
+
+.cardsmain {
+	display: block;
+}
+.cards {
+    /*margin-left: 1rem;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-gap: 1rem;
+	background-color: whitesmoke;
+}
+
+.cards > section {
+    background-color: #D5D2DA;
+    color: black;
+    margin: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 5px #231942;
+ 
+  }
+
+div.cards a {
+	text-decoration: none;
+	font-size: .75em;
+	font-weight: bold;
+}
+	div.cards a:link {
+		color: #24423F ;
+	  }
+	  
+	  /* visited link */
+	div.cards a:visited {
+		color: #E07A52;
+	  }
+	  
+	  /* mouse over link */
+	div.cards a:hover {
+		color: #1D97AF;
+	  }
+	  
+	  /* selected link */
+	div.cards a:active {
+		color: #00003D;
+	  }
+
+
+
+div.cards  h2{
+    font-family: 'forum';
+    font-size: 1.5em;
+	padding-top: .2em;
+	margin-bottom: .4em;
+	display: flex;
+	align-self: center;
+}
+
+div.cards  p{
+	font-family: 'poppins';
+    font-size: .75em;
+    line-height: 1.3em;
+	/*padding-top: 1em;*/
+	/*background-color: pink;*/
+	margin-bottom: 0em;
+	font-weight: bold;
+	
+}
+
+.cards  img {
+   
+	/*max-width: 340px;
+    height: auto;
+    margin-bottom: 1em;*/
+ width: 200px;
+ margin: 0 auto;
+}
+
 
 
 

@@ -1,7 +1,7 @@
 {
     "businesses": [
       {
-        "name": "Bay Shore Inn of Door County",
+        "name": "Bay Shore Inn",
         "address": "53 West Spruce Street, Sturgeon Bay, WI 54235",
         "phonenum": "1-888-481-1935",
         "hours": "Sun-Sat 8am-10pm",
@@ -33,7 +33,7 @@
         "address": "3740 Park Dr, Sturgeon Bay, WI 54235",
         "phonenum": "(920) 746-2890",
         "hours": "6 A.M. to 11 P.M. year-round",
-        "website": "https://dnr.wisconsin.gov/topic/parks/potawatomi",
+        "website": "https://dnr.wisconsin.gov/topic/parks",
         "imageurl": "images/dnr-circle-logo-txt.svg.svg",
         "membership": "Nonprofit"
       },
