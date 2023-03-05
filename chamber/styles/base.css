@@ -699,6 +699,10 @@ h1{
    align-self: center;
 }
 
+#directorytitle {
+	font-family: 'Forum';
+	font-size: 1.5em;
+}
 
 #reset {
 	display: block;

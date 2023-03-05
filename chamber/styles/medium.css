@@ -255,6 +255,11 @@ td {
 
 /**************************directory page styles*********************/
 
+#directorytitle {
+
+	font-size: 2em;
+}
+
 .list .cards > section {
 	flex-direction: row;
 	padding: .75rem;
