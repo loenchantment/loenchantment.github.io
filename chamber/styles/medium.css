@@ -253,5 +253,28 @@ td {
    
 }
 
+/**************************directory page styles*********************/
+
+.list .cards > section {
+	flex-direction: row;
+	padding: .75rem;
+	margin: 0rem;
+}
+
+
+
+.list div h2{
+    color: black;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.list p {
+	padding-left: .2em;
+	font-size: .75em;
+}
+
+
+
 
 }
