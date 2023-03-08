@@ -1,0 +1,64 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #231942;
+    color: whitesmoke; 
+    font-family: 'Forum', serif;
+    padding: 2em;
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 10em;
+   margin-bottom: 10em;
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.5em;;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h2 {
+  font-size: 1em;
+}
+
+figcaption {
+       text-transform: capitalize;
+}
+
+#weather-icon{
+  width: 10em;
+  background-color: paleturquoise;
+  border: 1em solid #231942;
+  border-radius: .25em; 
+}
+
+
+
+
+
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    background-color: #5E548E;
+    color: whitesmoke;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: 'Poppins', sans-serif;
+  }
+ 
+
+  
