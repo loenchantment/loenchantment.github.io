@@ -818,29 +818,6 @@ div.cards  p{
 	margin: 1em;
 }
 
-/*.list {
-	display: flex;
-	flex-direction: column;
-
-}*/
-/*
-.list section {
-    display: block;
-    justify-content:center ;
-	padding: 1rem;
-}*/
-/*
-.list div > * {
-	margin: 0 1rem;
-}*/
-
-.list section img {
-	display: none; 
-}
-/*
-.list .cards {
-	display: block;
-}*/
 
 .list div {
 	display: block;
@@ -870,7 +847,7 @@ div.cards  p{
 
 
 .list img {
-	width: 75px;
+	display: none;
 }
 
 
