@@ -259,27 +259,38 @@ header h1 {
 	display: block;
 }
 
+#weather-icon {
+	width: 10em;
+	height: auto;
+}
+
+
+
+
+
 #weather span {
  margin-left: 4px;
  margin-right: 2px;
 }
 
-#sunicon {
-	width: 10em;
-	height: auto;
-}
+
 
 #weather figure {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: .5em;
+	background-color: whitesmoke;
 }
 
 #weather figcaption {
-	font-size: .5em;
+	font-size: 1em;
 	text-decoration: none;
+	text-transform: capitalize;
+	margin-bottom: 2em;
 }
+
+
 
 
 h3 {
