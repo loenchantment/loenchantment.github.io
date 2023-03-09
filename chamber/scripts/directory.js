@@ -1,7 +1,7 @@
 const gridbutton = document.querySelector("#gridbtn");
 const listbutton = document.querySelector("#listbtn");
 const display = document.querySelector("section");
-console.log(display);
+//console.log(display);
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
@@ -46,8 +46,8 @@ async function getDirectoryData() {
       // Build the image portrait by setting all the relevant attribute
         image.setAttribute('src', business.imageurl);
         image.setAttribute('alt', `Logo for ${business.name}`);
-        image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '250');
+        //image.setAttribute('loading', 'lazy');
+        //image.setAttribute('width', '250');
    
        // Build the h2 content out to show the prophet's full name - finish the template string
        
