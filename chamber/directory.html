@@ -3,8 +3,12 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Sturgeon Bay, WI Chamber of Commerce Discover Page by Becky Jacobs for WDD 230, Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="description" content="Sturgeon Bay, WI Chamber of Commerce Directory Page by Becky Jacobs for WDD 230, Web Frontend Development at Brigham Young University - Idaho">
     
+    <meta name="author" content="Becky Jacobs">
+   
+ 
+
     <meta name="author" content="Becky Jacobs">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -13,8 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Poppins&display=swap" rel="stylesheet">
- 
-    <title>Discover Sturgeon Bay by Becky Jacobs</title>
+    <title>Directory of Sturgeon Bay Chamber Members by Becky Jacobs</title>
     </head>
     <body>
         <div class="banner">
@@ -41,9 +44,9 @@
            <nav>
                <ul class="navigation">
                   <li><a id="menu" href="#"></a></li>
-                  <li><a href="#" target="_blank">Discover</a></li>
-                  <li><a href="#" target="_blank">Directory</a></li>
-                  <li><a href="#" target="_blank">Join</a></li>
+                  <li><a href="discover.html" target="_blank">Discover</a></li>
+                  <li><a href="directory.html" target="_blank">Directory</a></li>
+                  <li><a href="join.html" target="_blank">Join</a></li>
                   <li><a href="#" target="_blank">Contact</a></li>
               </ul>
             </nav>
@@ -56,10 +59,19 @@
 
         </header>
     
-        <main class="cardsmain">
-                <div class="cards"></div>
-                
-              
+        <main id="reset">
+            <div class="directorymenu">
+                <h3 id="directorytitle">Chamber Directory</h3>
+                <button id="gridbtn">&#x25a6; Grid</button>
+                <button id="listbtn">☰ List</button>
+            </div>
+            
+            <section class="grid" id="cardsmain">
+                <h4 id="bye">Hi</h4>
+                <div class="cards"></div>  
+            </section>
+        
+               
         </main>
 
     <footer>
@@ -78,6 +90,7 @@
     <script src="scripts/js.js"></script>
     <script src="scripts/lazy_loading.js"></script>
     <script src="scripts/directory.js"></script>
+    
     
     </body>
 </html>

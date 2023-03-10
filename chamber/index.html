@@ -81,12 +81,12 @@
 
             <div class="container" id="weather">
                 <h2>Weather</h2>
-                <figure>
-                  <img src="images/icons8-sun-100.png" alt="sun icon" id="sunicon">
-                  <figcaption><a target="_blank" href="https://icons8.com/icon/111603/sun">Sun</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></figcaption>
+                <figure id="weather-figure">
+                    <img src="" alt="" id="weather-icon" />
+                    <figcaption id="weatherdescr"></figcaption>
                 </figure>
-                 <p class="weatherinfo">Current Temp is: <span id="temp">10</span> degrees</p>
-                 <p class="weatherinfo">Wind Speed is: <span id="speed">25</span> mph</p>
+                 <p class="weatherinfo">Current Temp is: <span id="temp"></span> degrees</p>
+                 <p class="weatherinfo">Wind Speed is: <span id="speed"></span> mph</p>
                  <p class="weatherinfo">Wind Chill: <span id="chill"> </span> </p>
                
             </div>
@@ -127,7 +127,8 @@
           This document was last modified: <span id="datemod"></span> 
       </div>
     </footer>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
     <script src="scripts/js.js"></script>
+    <script src="scripts/windchill2.js"></script>
     </body>
 </html>

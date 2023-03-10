@@ -259,27 +259,38 @@ header h1 {
 	display: block;
 }
 
+#weather-icon {
+	width: 10em;
+	height: auto;
+}
+
+
+
+
+
 #weather span {
  margin-left: 4px;
  margin-right: 2px;
 }
 
-#sunicon {
-	width: 10em;
-	height: auto;
-}
+
 
 #weather figure {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: .5em;
+	background-color: whitesmoke;
 }
 
 #weather figcaption {
-	font-size: .5em;
+	font-size: 1em;
 	text-decoration: none;
+	text-transform: capitalize;
+	margin-bottom: 2em;
 }
+
+
 
 
 h3 {
@@ -699,8 +710,14 @@ h1{
    align-self: center;
 }
 
-.cardsmain {
+#directorytitle {
+	font-family: 'Forum';
+	font-size: 1.5em;
+}
+
+#reset {
 	display: block;
+	background-color: whitesmoke;
 }
 .cards {
     /*margin-left: 1rem;*/
@@ -734,12 +751,12 @@ div.cards a {
 	  
 	  /* visited link */
 	div.cards a:visited {
-		color: #E07A52;
+		color: #1D97AF;
 	  }
 	  
 	  /* mouse over link */
 	div.cards a:hover {
-		color: #1D97AF;
+		color: #E07A52;
 	  }
 	  
 	  /* selected link */
@@ -747,7 +764,10 @@ div.cards a {
 		color: #00003D;
 	  }
 
+#bye {
+	display: none;
 
+}
 
 div.cards  h2{
     font-family: 'forum';
@@ -770,15 +790,79 @@ div.cards  p{
 }
 
 .cards  img {
-   
-	/*max-width: 340px;
-    height: auto;
-    margin-bottom: 1em;*/
  width: 200px;
  margin: 0 auto;
 }
 
+.directorymenu {
+	padding: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: whitesmoke;
+}
 
+.directorymenu button {
+	width: 6em;
+	height: 2.5em;
+	display: inline-block;
+	background-color: #146a7b;
+	color: whitesmoke;
+	border: none;
+	border-radius: 5em;
+	/*cursor: pointer;*/
+	margin: 1em;
+}
+
+.list div {
+	display: block;	
+}
+.list .cards > section {
+	box-shadow: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.list section:nth-child(even) {
+	background-color: #EAE9ED;
+}
+
+.list section:nth-child(odd) {
+	background-color: #EEFAFC;
+}
+
+.list section h2{
+    color: black;
+	font-size: 1em;
+}
+
+
+
+.list img {
+	display: none;
+}
+
+
+
+.list a{
+    font-size: 12px;
+	
+	margin-left: 2em;
+}
+.list p{
+    font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	margin-left: 2em;
+}
+
+.list .business{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--third-color);
+  padding: 1em;
+  }
 
 
 
