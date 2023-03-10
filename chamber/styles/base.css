@@ -709,12 +709,14 @@ img {
 h1{
     font-family: 'forum';
     font-size: 2.5em;
-   align-self: center;
+    align-self: center;
 }
 
 #directorytitle {
 	font-family: 'Forum';
 	font-size: 1.5em;
+	display: grid;
+	justify-content: center;
 }
 
 #reset {
@@ -796,74 +798,6 @@ div.cards  p{
  margin: 0 auto;
 }
 
-.directorymenu {
-	padding: 1em;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	background-color: whitesmoke;
-}
-
-.directorymenu button {
-	width: 6em;
-	height: 2.5em;
-	display: inline-block;
-	background-color: #146a7b;
-	color: whitesmoke;
-	border: none;
-	border-radius: 5em;
-	/*cursor: pointer;*/
-	margin: 1em;
-}
-
-.list div {
-	display: block;	
-}
-.list .cards > section {
-	box-shadow: none;
-	display: flex;
-	flex-direction: column;
-}
-
-.list div {
-	display: block;
-	
-}
-.list .cards > section {
-	box-shadow: none;
-	display: flex;
-	flex-direction: column;
-}
-
-.list section h2{
-    color: black;
-	font-size: 1em;
-}
-
-
-.list section:nth-child(even) {
-	background-color: #EAE9ED;
-}
-
-.list img {
-	display: none;
-}
-
-.list section h2{
-    color: black;
-	font-size: 1em;
-}
-
-
-
-
-.list .business{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: var(--third-color);
-  padding: 1em;
-  }
 
 
 
@@ -878,25 +812,6 @@ div.cards  p{
 
 
 
-.list a{
-    font-size: 12px;
-	
-	margin-left: 2em;
-}
-.list p{
-    font-size: 12px;
-	display: flex;
-	flex-direction: row;
-	margin-left: 2em;
-}
-
-.list .business{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: var(--third-color);
-  padding: 1em;
-  }
 
 
 
@@ -907,17 +822,7 @@ div.cards  p{
 
 
 
-.list a{
-    font-size: 12px;
-	
-	margin-left: 2em;
-}
-.list p{
-    font-size: 12px;
-	display: flex;
-	flex-direction: row;
-	margin-left: 2em;
-}
+
 
 
 
