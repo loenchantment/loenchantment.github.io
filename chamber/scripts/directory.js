@@ -1,68 +1,59 @@
+//much of this code came from the prophets activity
 const display = document.querySelector("section");
 //console.log(display);
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
-
-const link = 'https://loenchantment.github.io/chamber/data.json';
+//this connects the javascript to the json file, the await allows the page
+//to continue rendering if the response doesn't come immediately
+const link = `https://loenchantment.github.io/chamber/data.json`;
 async function getDirectoryData() {
     const response = await fetch(link);
     const data = await response.json();
-    //console.log(data.link);  // note that we reference the directory array of the data object given the structure of the json file
-    //displayDirectory(data.link);
+    //console.log(data.link);
     displayBusinesses(data.businesses);
-  }
+}
 
-  getDirectoryData();
 
-  const displayBusinesses = (businesses) => {
-     const cards = document.querySelector('div.cards'); // select the output container element
-   
-     businesses.forEach((business) => {
-       // Create elements to add to the div.cards element
-       let card = document.createElement('section');
-       let h2 = document.createElement('h2');
-       let address = document.createElement('p');
-       let phone = document.createElement('p');
-       let hours = document.createElement(`p`);
-       let website = document.createElement(`a`);
-       let image = document.createElement('img');
-      
+getDirectoryData()
 
-      // Build the image portrait by setting all the relevant attribute
-        image.setAttribute('src', business.imageurl);
-        image.setAttribute('alt', `Logo for ${business.name}`);
-        //image.setAttribute('loading', 'lazy');
-        //image.setAttribute('width', '250');
-   
-       // Build the h2 content out to show the prophet's full name - finish the template string
-       
-       h2.textContent = `${business.name}`;
-       phone.textContent = `Phone Number: ${business.phonenum}`;
-       address.textContent = `Address: ${business.address}`;
-       hours.textContent = `Hours: ${business.hours}`;
-       website.textContent = `Website: ${business.website}`;
-       website.setAttribute('href', business.website);
-       website.setAttribute(`target`, `_blank`);
-     
-      
-   
-       // Append the section(card) with the created elements
-       card.appendChild(image);
-       card.appendChild(h2);
-       card.appendChild(phone);
-       card.appendChild(address);
-       card.appendChild(hours);
-       card.appendChild(website);
-      
-       
- 
-      
-   
+//this makes the cards by creating elements and adding them to the page
+const displayBusinesses = (businesses) => {
+    const cards = document.querySelector("div.cards");
+
+    businesses.forEach((business) => {
+        let card = document.createElement("section");
+        let h2 = document.createElement("h2");
+        let address = document.createElement("p");
+        let phone = document.createElement("p");
+        let hours = document.createElement("p");
+        let website = document.createElement("a");
+        let image = document.createElement("img");
+
+
+        //this grings the images to the cards and shoul set the alt
+        image.setAttribute(`src`, business.imageurl);
+        image.setAttribute(`alt`, `Logo for ${business.name}`);
+
+        //this adds the content from the json to the cards
+        h2.textContent = `${business.name}`;
+        phone.textContent = `Phone Number: ${business.phonenum}`;
+        address.textContent = `Address: ${business.address}`;
+        hours.textContent = `Hours: ${business.hours}`;
+        website.textContent = `Website: ${business.website}`;
+        website.setAttribute(`href`, business.website);
+        website.setAttribute(`target`, `_blank`);
+
+        //this adds the created elements to the section
+        card.appendChild(image);
+        card.appendChild(h2);
+        card.appendChild(phone);
+        card.appendChild(address);
+        card.appendChild(hours);
+        card.appendChild(website);
+
        cards.appendChild(card);
-     } // end of forEach loop
-   )} // end of function expression
- 
- 
- 
- 
-  
+    }//this is the end of the for Each loopy
+
+
+    
+    )} //this is the end of the function
+
+    
