@@ -28,8 +28,3 @@ windChill = (windChill > tempr) ? tempr : windChill;
 
 /*This will make the windchill appear on the console*/
 console.log(windChill);
-
-document.getElementById("chill").innerHTML = Math.round(windChill) + " F";
-console.log(windChill);
-}
-/*will this produce this in the html?*/

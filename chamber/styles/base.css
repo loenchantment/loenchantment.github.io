@@ -293,6 +293,8 @@ header h1 {
 
 
 
+
+
 h3 {
 	padding: .5em;
 }
@@ -823,12 +825,28 @@ div.cards  p{
 	flex-direction: column;
 }
 
+.list div {
+	display: block;
+	
+}
+.list .cards > section {
+	box-shadow: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.list section h2{
+    color: black;
+	font-size: 1em;
+}
+
+
 .list section:nth-child(even) {
 	background-color: #EAE9ED;
 }
 
-.list section:nth-child(odd) {
-	background-color: #EEFAFC;
+.list img {
+	display: none;
 }
 
 .list section h2{
@@ -838,9 +856,25 @@ div.cards  p{
 
 
 
-.list img {
-	display: none;
-}
+
+.list .business{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--third-color);
+  padding: 1em;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -873,7 +907,17 @@ div.cards  p{
 
 
 
-
+.list a{
+    font-size: 12px;
+	
+	margin-left: 2em;
+}
+.list p{
+    font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	margin-left: 2em;
+}
 
 
 
