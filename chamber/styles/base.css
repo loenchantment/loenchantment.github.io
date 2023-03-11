@@ -25,11 +25,12 @@ body {
 	flex-direction: row;
 	justify-content: center;
 }
-/*
-.banner_stuff p {
-	display: flex;
 
-}*/
+.banner_text {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
 header {
 	background-color: #DCF4F9;
 	/*padding: 5px 0;*/

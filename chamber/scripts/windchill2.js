@@ -24,18 +24,33 @@ async function apiFetch() {
   }
   
   apiFetch();
-//Here's the start of an idea. Not sure how to make it work though
-  //function getChill(windSpeed, currentTemp) {
 
-  //}
 
   function  displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}`;
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong>`
-    humidity.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`
+    windSpeed.innerHTML = `${weatherData.wind.speed.toFixed(0)}`
+    humidity.innerHTML = `${weatherData.main.humidity.toFixed(0)}`
     const desc = weatherData.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
+    chilly();
+    
   }
+
+  //this seems to be doing the trick :)
+  function chilly() {
+   let tempr = parseInt(currentTemp.textContent);
+   let speedr = parseInt(windSpeed.textContent);
+   if (tempr > 50 || speedr < 3) {
+   document.getElementById("chill").innerHTML = "N/A";
+  }
+
+  else if (tempr <= 50 || speedr > 3) {
+
+   let windChill = 35.74 + 0.6215 * tempr - 35.75 * Math.pow(speedr, 0.16) + 0.4275 * tempr * Math.pow(speedr, 0.16);
+   windChill = (windChill > tempr) ? tempr : windChill;
+   document.getElementById("chill").innerHTML = Math.round(windChill);
+  }
+}

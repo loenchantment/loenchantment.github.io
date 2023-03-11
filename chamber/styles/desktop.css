@@ -1,5 +1,6 @@
 @media only screen and (min-width: 1200px) {
 
+    
     header {
        display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -93,6 +94,11 @@
    
     header img {
         padding: 0;
+    }
+
+    #mainy {
+        margin-left: 4em;
+        margin-right: 4em;
     }
 
    main {
