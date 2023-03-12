@@ -5,10 +5,54 @@
 main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.container, .containerhidden, .spotlights {
+#top_logo {
+max-width: 15em;
+}
+
+.social_icon {
+	max-width: 2.2em;
+	padding-left: 1em;
+}
+
+.socials {
+	display: flex;
+	flex-direction: row;
+	padding-left: 2em;
+	padding-right: 0em;
+}
+
+.date {
+	font-size: 1em;
+}
+
+#herojoin {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 19em;
+	margin-left: 0em;
+	font-size: 1em;
+}
+
+#welcome {
+	font-size: 2em;
+}
+
+#event {
+	display: flex;
+	align-content: center;
+}
+#event img {
+	max-width: 15em;
+	
+}
+
+#weather figure{
+	max-width: 10em;
+}
+.boxy, .boxyhidden, .spotlights {
 	margin: 10px;
 }
 

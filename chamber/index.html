@@ -37,34 +37,35 @@
            <nav>
                <ul class="navigation">
                   <li><a id="menu" href="#"></a></li>
+                  <li><a href="index.html" target="_blank">Home</a></li>
                   <li><a href="discover.html" target="_blank">Discover</a></li>
                   <li><a href="directory.html" target="_blank">Directory</a></li>
                   <li><a href="join.html" target="_blank">Join</a></li>
                   <li><a href="#" target="_blank">Contact</a></li>
               </ul>
             </nav>
-        
          </div>
 
          <div id="datebox">
            <p class="date"></p>
-        </div>
+         </div>
 
         </header>
         <main id="mainy">
-            <div class="container" id="hero">
-                  <img src="images/hero_smaller.jpg" id="heroimgreal" alt="view of Sturgeon Bay at sunset">
+            <div class="special" id="hero">
                   <picture id="crazy">
-                    <source media="(min-width: 1200px)" srcset="images/templg2.jpg">
-                    <source media="(min-width: 600px)" srcset="images/wdd230-org-650px.jpg">
-                    <img src="images/wdd230-org-400px.jpg" alt="three people sitting at work table" class="temppic">
+                    <source media="(min-width: 1200px)" srcset="images/herolargegood2.jpg">
+                    <source media="(min-width: 600px)" srcset="images/hero_med_perfect.jpg">
+                    <img src="images/hero_sm_perfect.jpg" alt="three people sitting at work table" class="temppic">
                   </picture>
-                  <h2 id="welcome">Welcome to Sturgeon Bay...</h2>
-                  <p id="herojoin">Join the Chamber</p>
+                  <div id="herofix">
+                    <h2 id="welcome">Welcome to Sturgeon Bay...</h2>
+                    <p id="herojoin"><a href="join.html" id="herolink" target="_blank">Join the Chamber</a></p>
+                </div>
             </div>
 
-            <div class="container" id="event">
-                <h2>Ice Sculpture Festival</h2>
+            <div class="boxy" id="event">
+                <h2 class="title">Ice Sculpture Festival</h2>
                 <p>Celebrate winter and help judge the sculptures, 
                    Friday from 6 - 9 p.m.
                 </p>
@@ -75,8 +76,8 @@
                 </figure>
             </div>
 
-            <div class="container" id="weather">
-                <h2>Weather</h2>
+            <div class="boxy" id="weather">
+                <h2 class="title">Weather</h2>
                 <figure id="weather-figure">
                     <img src="" alt="" id="weather-icon" />
                     <figcaption id="weatherdescr"></figcaption>
@@ -88,8 +89,8 @@
 
             </div>
 
-            <div class="container" id="news">
-                <h2>News Release</h2>
+            <div class="boxy" id="news">
+                <h2 class="title">News Release</h2>
                 <h3>Rogue Theater's New Location</h3>
                 <p>Rogue Theater will have a permanent presence in Sturgeon Bay. After years of renting different locations, 
                    the local favorite is constructing a new facility on North 14th Avenue. The local play house has hosted many
@@ -97,22 +98,22 @@
                    years to come.</p>
             </div>
 
-            <div class="container hidden" id="join">
-                <h2>Join</h2>
+            <div class="boxy hidden" id="join">
+                <h2 class="title">Join</h2>
             </div>
 
             <div class="spotlights" id="spot">
                   <div id="spotlight1">
-                   <h2 class="spotty">Spotlight 1</h2>
+                    <h2 class="spotty">Spotlight 1</h2>
                   </div>
 
                   <div id="spotlight2">
-                   <h2 class="spotty">Spotlight 2</h2>
+                    <h2 class="spotty">Spotlight 2</h2>
                   </div>
                   <div id="spotlight3">
                     <h2 class="spotty">Spotlight 3</h2>
-                   </div>
-                </div>
+                  </div>
+            </div>
         </main>
 
     <footer>
@@ -126,7 +127,7 @@
           This document was last modified: <span id="datemod"></span> 
       </div>
     </footer>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/lazy_loading.js"></script>
     <script src="scripts/js.js"></script>
     <script src="scripts/windchill2.js"></script>
     </body>
