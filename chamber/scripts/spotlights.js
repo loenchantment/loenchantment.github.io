@@ -1,10 +1,10 @@
 //much of this code came from the prophets activity
-const display = document.querySelector("section");
+const makeSpotlight = document.getElementsByClassName("spotlight");
 //console.log(display);
 //this connects the javascript to the json file, the await allows the page
 //to continue rendering if the response doesn't come immediately
 const link = `https://loenchantment.github.io/chamber/data.json`;
-async function getDirectoryData() {
+async function getSpotlightData() {
     const response = await fetch(link);
     const data = await response.json();
     //console.log(data.link);
@@ -12,7 +12,7 @@ async function getDirectoryData() {
 }
 
 
-getDirectoryData()
+getSpotlightData()
 
 //this makes the cards by creating elements and adding them to the page
 const displayBusinesses = (businesses) => {
