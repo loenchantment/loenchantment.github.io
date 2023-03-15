@@ -5,6 +5,7 @@
 main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 #top_logo {
@@ -140,6 +141,11 @@ figcaption {
 
 /*style for discover page*/
 
+.main {
+	margin-right:6em;
+	margin-bottom: 5em;
+}
+
 
 #info2, #info3, #info4, #info5 {
 	display: flex;
@@ -151,7 +157,7 @@ figcaption {
 .main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	/*grid-template-rows: 1fr 1fr 1fr 1fr;*/
 
 }
 
@@ -167,7 +173,8 @@ figcaption {
 
 #history {
 	grid-column: 2/4;
-	grid-row: 1/2;
+	margin-top: 4em;
+	margin-bottom: 4em;
 }
 #museum {
 	padding-top: 5em;
@@ -200,6 +207,8 @@ figcaption {
 	
 	grid-column: 2/4;
 	grid-row: 4/6;
+	margin-bottom: 4em;
+
 }
 
 #edu_demo_hous {
@@ -208,6 +217,7 @@ figcaption {
 
 .museum {
 	display: flex;
+	margin-top: 4em;
 	
 }
 
@@ -216,10 +226,24 @@ figcaption {
 }
 
 .visitlabel {
+	margin-top: 4em;
     padding: 2em;
     background-color:#DCF4F9 ;
 	border-radius: .2em;
+	margin-top: 5em;
    }
+
+#home_box {
+	display: flex;
+	justify-content: center;
+}
+
+#home {
+	display: flex;
+	justify-content: center;
+}
+
+
 
 
 /*--------------styles for thanks page-----------*/

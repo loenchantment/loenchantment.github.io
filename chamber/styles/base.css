@@ -401,19 +401,15 @@ footer div img, p, a span {
 
 /*****************discover page styles****************/
 
+
+
 .discovermain {
 	height: auto;
-    /*padding: 1rem;*/
-    /*background-color:aquamarine;*/
-    /*margin-top: 1em;*/
-   /*	display: flex;
-	flex-wrap: wrap;*/
-	justify-content: center;
 }
 
 .discoverdiv {
 	
-	display: flex;
+	display: grid;
 	justify-content: center;
 	align-content: center;
 	
@@ -422,6 +418,8 @@ footer div img, p, a span {
 .disc_pic {
 	display: flex;
 	justify-content: center;
+	margin-top: .5em;
+	margin-bottom: .5em;
 
 
 }
@@ -441,13 +439,15 @@ footer div img, p, a span {
 .discoverp {
 	font-size: .85em;
 	padding-top: .5em;
+	max-width: 333px;
+	margin-bottom: 1em;
 }
 
 #discoverh2 {
-	padding-bottom: .7em;
+	margin-top: .7em;
+	margin-left: .5em;
+	margin-bottom: .7em;
 	font-size: 1.4em;
-	/*font-family: "Forum, serif";*/
-	align-self: center;
 }
 
 .discovcont {
@@ -474,6 +474,7 @@ footer div img, p, a span {
 .museum {
 	display: none;
 }
+
 
 /*image lazyloading*/
 /*this adds the blur to image loading*/
