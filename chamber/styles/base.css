@@ -219,6 +219,10 @@ header h1 {
 	padding-left: 1em;	
 }
 
+#herojoin:hover {
+	background-color: #3DC3E1;
+}
+
 #herolink {
 	text-decoration: none;
 	color: #00003D;
@@ -234,7 +238,7 @@ header h1 {
   
   /* mouse over link */
 #herolink:hover {
-	color: #1D97AF;
+	color: whitesmoke;
   }
   
   /* selected link */
