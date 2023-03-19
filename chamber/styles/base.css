@@ -268,13 +268,13 @@ header h1 {
 	font-size: .85em;
 }
 
-#event figure {
+
+
+#event_figure {
 	display: none;
 }
 
-#event img {
-	max-width: 20em;
-}
+
 
 #weather div{
 	background-color:  #DCF4F9;
@@ -333,11 +333,72 @@ h3 {
 	padding: 2em;
 	border-style: solid;
 	border-width: .1em;
-	margin: .5em;
-	/*display: block;*/
+	padding: .5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 }
 
+#spotlight_title {
+	font-size: 1em;
+    font-weight: bold;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    align-self: center
+}
+
+.spotlight {
+	margin: .5em;
+	border-style: solid;
+	border-width: 0.1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	padding: .5em;
+	background-color: whitesmoke;
+}
+
+.spotTitle {
+	font-size: 1em;
+	align-self: center;
+}
+
+.spotAddress {
+	font-size: 1em;
+	align-self: center;
+}
+
+.spotWeb {
+	font-size: 1em;
+	text-decoration: none;
+	align-self: center;
+}
+
+.spotWeb:link {
+	color: #00003D;
+}
+
+.spotWeb:hover {
+	color: #E07A52;
+}
+
+.spotWeb:active {
+	color: #1D97AF;
+}
+
+.spotweb:visited {
+	color: #1D97AF;
+}
+
+.spotImg {
+	max-width: 200px;
+	height: auto;
+	align-self: center;
+	
+}
 /*spotlight containers*/
 #spotlight1, #spotlight2{
 	/*background-color: aqua;*/
@@ -506,16 +567,10 @@ img {
 .maintable {
 	padding: 0 2%;
 	min-height: 20rem;
+    display: block;
 
 }
 
-#tablefix {
-	display: none;
-	padding: 0em;
-	background-color: transparent;
-	border: none;
-	margin-top: 2em;
-}
 
 /*table styles*/
 
@@ -572,9 +627,9 @@ th {
   
 }
 
-.maintable {
+/*.maintable {
 	display: block;
-}
+}*/
 
 /*-------------Form styles-----------------*/
 
@@ -589,7 +644,7 @@ th {
 
 form fieldset {
     margin: 2rem 0;
-    border: 2px solid #146a7b;
+    border: 3px solid #146a7b;
     border-radius: 10px;
     padding: .5rem 2%;
 
@@ -634,7 +689,7 @@ form label.top input, form label.top select {
 
 form label.sbs {
     display: block;
-    padding: 1rem;
+    padding: 2rem;
     color:#555;
 }
 
@@ -713,8 +768,27 @@ textarea.tell {
 
 }
 
+#thanksmed {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+}
 
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.thanks-boxy {
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+
+}
 
 
 
@@ -823,6 +897,83 @@ div.cards  p{
  width: 200px;
  margin: 0 auto;
 }
+
+/*---------------Styles for Contact Page------------------------------*/
+
+.contact_top {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #84DAEB;
+	padding-bottom: 2em;
+}
+
+/*#event_figure_cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}*/
+
+#help_pic_cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#bridge_sm_cont {
+	max-width: 380px;
+	align-self: center;
+}
+
+
+
+#cont_pic_info {
+	font-size: .75em;
+	margin-top: .25em;
+	align-self: center;
+
+}
+
+#submit_cont {
+	background-color: #84DAEB;
+}
+
+#cont_form_head {
+	align-self: center;
+	font-family: "forum";
+}
+
+#cont_form_div  {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#form_area_1 {
+	background-color: rgba(132, 218, 235, 0.2);
+	border: none;
+}
+
+#cont_form_legend {
+	background-color: rgba(132, 218, 235, 0.2);
+}
+
+
+#cont_p {
+	align-self: center;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	padding-left: 2em;
+	
+}
+
+#info_lgpg_contact {
+	display: none;
+}
+
 
 
 

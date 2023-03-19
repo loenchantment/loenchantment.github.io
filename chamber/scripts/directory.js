@@ -1,5 +1,5 @@
 //much of this code came from the prophets activity
-const display = document.querySelector("section");
+
 //console.log(display);
 //this connects the javascript to the json file, the await allows the page
 //to continue rendering if the response doesn't come immediately
@@ -28,7 +28,7 @@ const displayBusinesses = (businesses) => {
         let image = document.createElement("img");
 
 
-        //this brings the images to the cards and shoul set the alt
+        //this brings the images to the cards and should set the alt
         image.setAttribute(`src`, business.imageurl);
         image.setAttribute(`alt`, `Logo for ${business.name}`);
 
