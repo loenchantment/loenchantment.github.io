@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="styles/largest.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Poppins&display=swap" rel="stylesheet">
@@ -41,7 +42,7 @@
                   <li><a href="discover.html">Discover</a></li>
                   <li><a href="directory.html">Directory</a></li>
                   <li><a href="join.html">Join</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
          </div>
@@ -56,7 +57,7 @@
                   <picture id="crazy">
                     <source media="(min-width: 1200px)" srcset="images/herolargegood2.jpg">
                     <source media="(min-width: 600px)" srcset="images/hero_med_perfect.jpg">
-                    <img src="images/hero_sm_perfect.jpg" alt="three people sitting at work table" class="temppic">
+                    <img src="images/hero_sm_perfect.jpg" alt="sunset on the bay" class="temppic">
                   </picture>
                   <div id="herofix">
                     <h2 id="welcome">Welcome to Sturgeon Bay...</h2>
@@ -70,8 +71,8 @@
                    Friday from 6 - 9 p.m.
                 </p>
                 <p>more info ...</p>
-                <figure>
-                    <img src="images/icesculp_sm.jpg">
+                <figure id="event_figure">
+                    <img src="images/icesculp_sm.jpg" id="icesculp">
                     <figcaption>Image by <a href="https://pixabay.com/users/publicdomainpictures-14/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=15819">PublicDomainPictures</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=15819">Pixabay</a></figcaption>
                 </figure>
             </div>
@@ -100,19 +101,15 @@
 
             <div class="boxy hidden" id="join">
                 <h2 class="title">Join</h2>
+                <p>Would you like to network with other local businesses? Chamber members benefit from 
+                    individualized training and advertising opportunities. Don't delay, join today! 
+                </p>
+                <p id="join_box"><a href="join.html" target="_blank" id="join_text">Join the Chamber</a></p>
             </div>
 
             <div class="spotlights" id="spot">
-                  <div class="spotlight" id="spotlight1">
-                    <h2 class="spotty">Spotlight 1</h2>
-                  </div>
-
-                  <div class="spotlight" id="spotlight2">
-                    <h2 class="spotty">Spotlight 2</h2>
-                  </div>
-                  <div class="spotlight" id="spotlight3">
-                    <h2 class="spotty">Spotlight 3</h2>
-                  </div>
+            <h2 class="title" id="memTitle">Member Spotlights</h2>
+                  
             </div>
         </main>
 
@@ -130,5 +127,6 @@
     <script src="scripts/lazy_loading.js"></script>
     <script src="scripts/js.js"></script>
     <script src="scripts/windchill2.js"></script>
+    <script src="scripts/spotlights.js"></script>
     </body>
 </html>
