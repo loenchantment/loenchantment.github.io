@@ -48,6 +48,7 @@
     
     .navigation {
 		display: flex;
+      
 	}
 	.navigation li {
 		display: block; 
@@ -67,7 +68,7 @@
         text-decoration: none;
         color: #00003D;
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 1.2em;
         transition: 0.5s;
         /*font-size: clamp(1rem, 2vmin, 1.5rem);*/
         z-index: 0;
@@ -80,6 +81,7 @@
       width: 20em;
       max-width: 70em;
       padding-top: 2em;
+      margin-left: 3em;
     }
     .social_icon{
         max-width: 1.5em;
@@ -88,7 +90,7 @@
     }
     
     .socials {
-        padding-right: .5em;
+       margin-left: -2em;
     }
 
    
@@ -97,8 +99,8 @@
     }
 
     #mainy {
-        margin-left: .5em;
-        margin-right: .5em;
+        margin-left: 3em;
+        margin-right: 3em;
     }
 
    main {
@@ -226,6 +228,33 @@
     width: auto;
     height: 100%;
  }
+
+ #logo_bottom {
+    max-width: 320px;
+ }
+
+.footstuff {
+  width: 1000px;
+}
+
+.footer_cont_mappy {
+	margin-left: 30em;
+}
+
+#footer_line {
+    display: none;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+#name {
+    margin-left: 2em;
+}
 
  /*-------------styles for thank you page-----*/
 
