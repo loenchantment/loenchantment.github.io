@@ -59,13 +59,13 @@
                 <picture id="help_pic_cont">
                   <source media="(min-width: 1200px)" id="bridge_lg_cont" srcset="images/bridge_lg.jpg">
                   <img src="images/drawbridge-sm-ready.jpg" id="bridge_sm_cont" alt="metal drawbridge">
-                  <span id="cont_pic_info">Image by <a href="https://pixabay.com/users/mikegoad-29415/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3890544">Mike Goad</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3890544">Pixabay</a></span>
                 </picture>
+                <p id="cont_pic_info">Image by <a href="https://pixabay.com/users/mikegoad-29415/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3890544">Mike Goad</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3890544">Pixabay</a></p>
                
              </div>
 
            <div id="info_lgpg_contact">
-              <h3>Chamber Contact Information: Feel Free to Call or Visit</h3>
+              <h2>Chamber Contact Information: Feel Free to Call or Visit</h2>
               <p>Chamber Address: 1766 Main Street Sturgeon Bay, WI 54245</p>
               <p>Phone Number: 1 (920)-000-0000</p>
               <p>Email: stbaychamber@someemail.com</p>
@@ -88,16 +88,18 @@
       
               <fieldset class="telldiv"> 
                 <legend class="fix_legend">Please type your request or comment here...</legend>
+                <label for="tell">
                 <textarea class="tell" placeholder="Please type your request or question here. We look forward to hearing from you..." rows="10" cols="35" name="tell" ></textarea>
+                </label>
               </fieldset>
 
-              <label id="submitLabel" for="submit"></label>
+              <label id="submitLabel" for="submit_cont"></label>
               <input type="submit" value="Submit" class="submitBtn" id="submit_cont">
 
-              <label id="submitText" for="day"></label>
+              <!--<label id="submitText" for="day"></label>-->
               <input type="text" id="day" name="day" class="hidden2" value="CurrentDate">
 
-              <label id="submitTime" for="time"></label>
+              <!--<label id="submitTime" for="time"></label>-->
               <input type="text" id="time" name="time" class="hidden2" value="CurrentTime">
 
 

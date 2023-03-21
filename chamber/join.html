@@ -60,7 +60,7 @@
                     <th colspan="5" scope="colgroup" class="lefty">Chamber Membership Levels</th>
                   </tr>
                   <tr>
-                   <td scope="col" class="colormatch"></td>
+                   <th scope="col" class="colormatch"></th>
                    <th scope="col" class="head2">NonProfit</th>
                    <th scope="col" class="head2">Bronze</th>
                    <th scope="col" class="head2">Silver</th>
@@ -128,17 +128,20 @@
       
               <fieldset class="telldiv">
                   <legend>Tell Us About Your Business</legend>
-                
+                   
+                  <label for="tell">
                   <textarea class="tell" placeholder="Please let us know about your business ..." rows="10" cols="35" name="tell" > </textarea>
+                  </label>
               </fieldset>
                
-              <label id="submitLabel" for="submit"></label>
+              <label for="submitBtn">
               <input type="submit" value="Join the Chamber" class="submitBtn">
-              
-              <label id="submitText" for="day"></label>
+              </label>
+
+             <!--<label id="submitText" for="hidden2"></label>-->
               <input type="text" id="day" name="day" class="hidden2" value="CurrentDate">
 
-              <label id="submitTime" for="time"></label>
+              <!--<label id="submitTime" for="time"></label>-->
               <input type="text" id="time" name="time" class="hidden2" value="CurrentTime">
 
 
