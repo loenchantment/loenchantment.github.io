@@ -22,11 +22,6 @@
                 <div class="banner_text">
                     <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
                 </div>
-                <button class="closebanner" type="button">
-                    <span class="material-symbols-outlined">
-                        close
-                    </span>
-                </button>
             </div>
         </div>
         <header>
@@ -64,7 +59,7 @@
                 <picture id="help_pic_cont">
                   <source media="(min-width: 1200px)" id="bridge_lg_cont" srcset="images/bridge_lg.jpg">
                   <img src="images/drawbridge-sm-ready.jpg" id="bridge_sm_cont" alt="metal drawbridge">
-                  <p id="cont_pic_info">Image by <a href="https://pixabay.com/users/mikegoad-29415/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3890544">Mike Goad</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3890544">Pixabay</a></p>
+                  <span id="cont_pic_info">Image by <a href="https://pixabay.com/users/mikegoad-29415/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3890544">Mike Goad</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3890544">Pixabay</a></span>
                 </picture>
                
              </div>
@@ -82,21 +77,27 @@
           </div>
             <form method="get" action="thanks2.html">
               <fieldset id="form_area_1">
-                  <label class="top" id="top_cont"><p>First Name*</p><input type="text" name="fname" required></label>
-                  <label class="top"><p>Last Name*</p><input type="text" name="lname"></label>
-                  <label class="top"><p>Email*</p> <input type="email" name="email" placeholder="someone@gmail.com"></label>
-                  <label class="top"><p>Phone*</p> <input type="tel" name="phone" placeholder="1235551234"></label>
+                  <legend class="fix_legend">Please Enter Your Information</legend>
+                  <label class="top" id="top_cont"><span>First Name*</span><input type="text" name="fname" required></label>
+                  <label class="top"><span>Last Name*</span><input type="text" name="lname" required></label>
+                  <label class="top"><span>Email*</span> <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                  <label class="top"><span>Phone</span> <input type="tel" name="phone" placeholder="1235551234"></label>
               </fieldset>
       
           
       
               <fieldset class="telldiv"> 
-                  <textarea class="tell" placeholder="Please type your request or question here. We look forward to hearing from you..." rows="10" cols="35" name="tell" ></textarea>
+                <legend class="fix_legend">Please type your request or comment here...</legend>
+                <textarea class="tell" placeholder="Please type your request or question here. We look forward to hearing from you..." rows="10" cols="35" name="tell" ></textarea>
               </fieldset>
-               
+
+              <label id="submitLabel" for="submit"></label>
               <input type="submit" value="Submit" class="submitBtn" id="submit_cont">
 
+              <label id="submitText" for="day"></label>
               <input type="text" id="day" name="day" class="hidden2" value="CurrentDate">
+
+              <label id="submitTime" for="time"></label>
               <input type="text" id="time" name="time" class="hidden2" value="CurrentTime">
 
 
@@ -107,17 +108,33 @@
         
         </main>
 
-    <footer>
-        <div class="footstuff">
-          <img src="images/icon-webp'd.webp" alt="sailing ship logo" id="logo_bottom">
-          <p class="footp">1766 Main Street</p>
-          <p class="footp">Sturgeon Bay, WI 54235</p>
-          <p class="footp">1 (920)-000-0000</p>
-          <a href="https://www.google.com/maps/place/Sturgeon+Bay,+WI+54235/@44.826206,-87.3990308,13z/data=!3m1!4b1!4m6!3m5!1s0x881d49691c8e862b:0x26797d9268b6f036!8m2!3d44.8341639!4d-87.3770419!16zL20vMDJtMDAy" target="_blank" ><img src="images/icons8-map-pin-100.png" alt="map pin icon" id="pin"></a>
-          <span id="copyright"></span><span id="name">Becky Jacobs</span>
-          This document was last modified: <span id="datemod"></span> 
-      </div>
-    </footer>
+        <footer>
+          <div class="footstuff">
+            <div class="footer_chamber_info">
+              <div class="footer_icon_addr">
+                <img src="images/icon-webp'd.webp" alt="sailing ship logo" id="logo_bottom">
+                <p class="footp">1766 Main Street</p>
+                <p class="footp">Sturgeon Bay, WI 54235</p>
+              </div>
+              <div class="footer_cont_mappy">
+                <div class="footer_contact">
+                  <p class="footp">Email: stbaychamber@someemail.com</p>
+                  <p class="footp">Phone: 1 (920)-000-0000</p>
+                </div>
+                <div class="mappy">
+                  <p class="footp"><a class="map_link" href="https://www.google.com/maps/place/Sturgeon+Bay,+WI+54235/@44.8261504,-87.3640115,13z/data=!3m1!4b1!4m6!3m5!1s0x881d49691c8e862b:0x26797d9268b6f036!8m2!3d44.8341639!4d-87.3770419!16zL20vMDJtMDAy">Map of Sturgeon Bay</a></p>
+                  <a id="map_pin" href="https://www.google.com/maps/place/Sturgeon+Bay,+WI+54235/@44.826206,-87.3990308,13z/data=!3m1!4b1!4m6!3m5!1s0x881d49691c8e862b:0x26797d9268b6f036!8m2!3d44.8341639!4d-87.3770419!16zL20vMDJtMDAy" target="_blank" ><img src="images/icons8-map-pin-100.png" alt="map pin icon" id="pin"></a>
+                </div>
+              </div>   
+            </div>
+  
+            <div class="footer_bottom">
+              <hr id="footer_line">
+              <span id="copyright"> </span>  <span id="name">  Sturgeon Bay Chamber Project <img src="images/vertical-line_sm.png" alt="decorative" class="vert"> by Becky Jacobs <img src="images/vertical-line_sm.png" alt="decorative" class="vert"></span>
+              This document was last modified: <span id="datemod"></span> 
+            </div>
+        </div>
+      </footer>
     
     <script src="scripts/hiddendate.js"></script>
     <script src="scripts/js.js"></script>

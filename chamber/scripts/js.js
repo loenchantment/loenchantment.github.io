@@ -26,10 +26,14 @@ if (now.getDay() == 1 || now.getDay() == 2)  {
 //Connecting the elements to the html. 
 const mainnav = document.querySelector('.navigation')
 const hambutton = document.querySelector('#menu');
+hambutton.setAttribute(`alt`, `hamburger menu icon`);
+
+
 
 // Add a simple arrow function that listens for the <li> hamburger button click event.
 // When clicked, the <ul class="navigation">'s class list toggle or switches to responsive
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+
 
 
 

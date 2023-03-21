@@ -22,11 +22,7 @@
                 <div class="banner_text">
                     <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
                 </div>
-                <button class="closebanner" type="button">
-                    <span class="material-symbols-outlined">
-                        close
-                    </span>
-                </button>
+              
             </div>
         </div>
         <header>
@@ -64,7 +60,7 @@
                     <th colspan="5" scope="colgroup" class="lefty">Chamber Membership Levels</th>
                   </tr>
                   <tr>
-                   <th scope="col" class="colormatch"></th>
+                   <td scope="col" class="colormatch"></td>
                    <th scope="col" class="head2">NonProfit</th>
                    <th scope="col" class="head2">Bronze</th>
                    <th scope="col" class="head2">Silver</th>
@@ -109,7 +105,7 @@
                 </tr>
             </table>
            
-            <h3 class="formheader">Join the Sturgeon Bay Chamber of Commerce</h3>
+            <h2 class="formheader">Join the Sturgeon Bay Chamber of Commerce</h2>
             <form method="get" action="thanks.html">
               <fieldset>
                   <legend>Please Enter Your Information</legend>
@@ -133,12 +129,16 @@
               <fieldset class="telldiv">
                   <legend>Tell Us About Your Business</legend>
                 
-                  <textarea class="tell" placeholder="Please let us know about your business ..." rows="10" cols="35" name="tell" ></textarea>
+                  <textarea class="tell" placeholder="Please let us know about your business ..." rows="10" cols="35" name="tell" > </textarea>
               </fieldset>
                
+              <label id="submitLabel" for="submit"></label>
               <input type="submit" value="Join the Chamber" class="submitBtn">
-
+              
+              <label id="submitText" for="day"></label>
               <input type="text" id="day" name="day" class="hidden2" value="CurrentDate">
+
+              <label id="submitTime" for="time"></label>
               <input type="text" id="time" name="time" class="hidden2" value="CurrentTime">
 
 
@@ -149,17 +149,33 @@
         
         </main>
 
-    <footer>
-        <div class="footstuff">
-          <img src="images/icon-webp'd.webp" alt="sailing ship logo" id="logo_bottom">
-          <p class="footp">1766 Main Street</p>
-          <p class="footp">Sturgeon Bay, WI 54235</p>
-          <p class="footp">1 (920)-000-0000</p>
-          <a href="https://www.google.com/maps/place/Sturgeon+Bay,+WI+54235/@44.826206,-87.3990308,13z/data=!3m1!4b1!4m6!3m5!1s0x881d49691c8e862b:0x26797d9268b6f036!8m2!3d44.8341639!4d-87.3770419!16zL20vMDJtMDAy" target="_blank" ><img src="images/icons8-map-pin-100.png" alt="map pin icon" id="pin"></a>
-          <span id="copyright"></span><span id="name">Becky Jacobs</span>
-          This document was last modified: <span id="datemod"></span> 
-      </div>
-    </footer>
+        <footer>
+            <div class="footstuff">
+              <div class="footer_chamber_info">
+                <div class="footer_icon_addr">
+                  <img src="images/icon-webp'd.webp" alt="sailing ship logo" id="logo_bottom">
+                  <p class="footp">1766 Main Street</p>
+                  <p class="footp">Sturgeon Bay, WI 54235</p>
+                </div>
+                <div class="footer_cont_mappy">
+                  <div class="footer_contact">
+                    <p class="footp">Email: stbaychamber@someemail.com</p>
+                    <p class="footp">Phone: 1 (920)-000-0000</p>
+                  </div>
+                  <div class="mappy">
+                    <p class="footp"><a class="map_link" href="https://www.google.com/maps/place/Sturgeon+Bay,+WI+54235/@44.8261504,-87.3640115,13z/data=!3m1!4b1!4m6!3m5!1s0x881d49691c8e862b:0x26797d9268b6f036!8m2!3d44.8341639!4d-87.3770419!16zL20vMDJtMDAy">Map of Sturgeon Bay</a></p>
+                    <a id="map_pin" href="https://www.google.com/maps/place/Sturgeon+Bay,+WI+54235/@44.826206,-87.3990308,13z/data=!3m1!4b1!4m6!3m5!1s0x881d49691c8e862b:0x26797d9268b6f036!8m2!3d44.8341639!4d-87.3770419!16zL20vMDJtMDAy" target="_blank" ><img src="images/icons8-map-pin-100.png" alt="map pin icon" id="pin"></a>
+                  </div>
+                </div>   
+              </div>
+    
+              <div class="footer_bottom">
+                <hr id="footer_line">
+                <span id="copyright"> </span>  <span id="name">  Sturgeon Bay Chamber Project <img src="images/vertical-line_sm.png" alt="decorative" class="vert"> by Becky Jacobs <img src="images/vertical-line_sm.png" alt="decorative" class="vert"></span>
+                This document was last modified: <span id="datemod"></span> 
+              </div>
+          </div>
+        </footer>
     
     <script src="scripts/hiddendate.js"></script>
     <script src="scripts/js.js"></script>
