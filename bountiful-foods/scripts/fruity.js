@@ -1,26 +1,4 @@
-const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
-async function getFruitNames() {
-    const response = await fetch(url);
-    const data = await response.json();
-    console.table(data);
-    displayFruits(data);
-  }
-  
- getFruitNames();
 
- const displayFruits = ([0].fruit) => {
-         const display = document.getElementsByClassName('chooseFruit');
-         
-
-         forEach => {
-            let option = document.createElement('option');
-
-            option.textContent = `${[0].fruit}`
-
-            display.appendChild(option);
-
-         }
- }
  
 
 

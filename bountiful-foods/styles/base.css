@@ -1,0 +1,220 @@
+
+
+body {
+    font-family: 'Mukta Malar', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    margin:0 auto; 
+}
+
+header {
+    background-color: #D2F6CB;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.logo-name {
+    /*display: flex;*/
+    text-align: center;
+    /*margin-bottom: 2rem;*/
+   /* padding-left: 3rem;
+    padding-right: 3rem;
+    /*min-width: 300px;*/
+    /*background-color: lime;*/
+}
+
+.logo-name img {
+    width: 75px;
+    height: auto;
+    margin-left: 1em;
+    margin-right: 1rem;
+  
+   
+}
+
+header h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2rem;
+    color: #C36276;
+    /*width: 20rem;*/
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+   /* background-color: lime;*/
+   /* margin-top: 2rem;*/
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #ffe65a;
+    background-color: #C36276;
+    font-size: 16px; 
+    font-weight: bold;
+    padding: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 3rem;
+    border-color: none;
+}
+
+.top-socials img {
+    max-width: 2em;
+    display: none;
+}
+
+.hero {
+    display: none;
+}
+
+.big-content {
+    text-align: center;
+    padding: 2em;
+    margin: .5em;
+    border: 3px solid #B4F0A8;
+}
+
+.big-content p {
+    text-align: left;
+}
+
+.big-content h2, h3, h4, h5, h6 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1.5rem;
+    color: #C36276;
+    text-shadow: 2px 2px 1px  grey;
+    padding: 0px;
+    margin: 0px;
+}
+
+#fruity {
+    display: flex;
+    justify-content: center;
+    background-image: /*linear-gradient(rgba(215, 195, 195, 0.5), rgba(215, 204, 204, 0.5)),*/
+    url("/bountiful-foods/images/smoothie_tiny.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 5em;
+    border-radius: 1rem;
+    
+}
+
+#fruity a {
+    text-decoration: none;
+    background-color:#C36276;
+    color:#ffe65a;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 2.5px #D89194;
+    /*min-width: 250px;*/
+}
+
+/*#weather-factor div {  
+    background-color: aqua;
+}*/
+
+#weather-factor p {
+    text-align: center;
+}
+
+#weather, #freshy, #forecast {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #D2F6CB;
+    margin-top: 1rem;
+}
+
+#fresh-title, #forecast-title {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1.5rem;
+    color: #C36276;
+    text-shadow: 2px 2px 1px  grey;
+}
+
+footer {
+    background-color: #DDA6B1;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+#logo-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+ 
+}
+
+#logo-foot-p {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1.2rem;
+    color: #FFE65A; 
+    padding-right: 1.6rem; 
+    text-shadow: 2px 2px 1px black; 
+}
+
+#logo-foot img{
+    max-width: 45px;
+    max-height: 45px;
+    /*padding-right: 1rem;*/
+}
+
+#socials-foot img{
+     max-width: 35px;
+     padding: 0rem;
+     margin-top: .75rem;
+}
+
+#copy-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*padding-top: 2rem;*/
+    background-color: #E9C4CB;
+}
+
+#copy-foot p {
+    color: rgb(26, 24, 24);
+    font-size: 1rem;
+}
+
+#becky{
+    padding-left: 2rem;
+}
+
+#contact {
+    display: none;
+    flex-direction: column;
+    color: rgb(26, 24, 24);
+    font-size: 1.2rem;
+    line-height: 0%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    font-weight: bold;
+
+}
+
+#contact p {
+    margin-bottom: 1%;
+    color: #FFE65A;
+    text-shadow: 1.3px 1.3px 1px black; 
+
+}
+
+#modified {
+    margin-top: 2rem;
+}
+
+/***************************Fresh Page*******************************/
+
+
+
+

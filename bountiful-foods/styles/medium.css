@@ -1,0 +1,176 @@
+@media only screen and (min-width: 650px) {
+
+header {
+    grid-template-columns: 1fr 1fr;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+.top-socials {
+    display: none;
+    flex-direction: row;
+  
+}
+
+.top-socials img{
+    display: flex;
+    flex-direction: row;
+    padding-right: 1.5em;
+}
+
+
+.logo-name {
+    display: flex;
+    flex-direction: row;
+    padding-right: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-name img {
+ 
+    width: 60px;
+    height: 60px;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+}
+
+#socials-topnav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+
+}
+
+.top-nav {
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #ffe65a;
+    background-color: #C36276;
+    padding: .75rem;
+    margin-right: .75rem;
+    border-radius: 1rem;
+    border-color: none;
+}
+
+ 
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background-image: 
+    url("/bountiful-foods/images/smoothie_hero.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 5em;
+  }
+  
+  .hero-text {
+      display: flex;
+  }
+  
+  .hero-text  a {
+      color: #ffe65a;
+      font-size: 2em;
+      padding: 1em;
+      text-decoration: none;
+      background-color: #C36276;
+      border-radius: 3rem;
+  }
+
+  #contact {
+      display: flex;
+}
+
+/**************Grid for medium and large pages**************/
+
+.split-grid  {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: auto;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    margin-left: .5rem;
+    margin-top: 1rem;
+    margin-right: .5rem;
+    
+}
+
+.big-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#area-info {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#weather-factor {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+
+}
+
+#mission {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#store  {
+    display: flex;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#deliver  {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+#fruity {
+    align-items: center;
+}
+
+#fruity a {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+#logo-foot img {
+    margin-right: 1rem;
+}
+
+#contact {
+    margin-right: 2rem;
+    margin-left: 0rem;
+}
+
+
+
+
+
+
+}
