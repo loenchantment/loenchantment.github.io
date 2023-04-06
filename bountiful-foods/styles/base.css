@@ -3,10 +3,23 @@
 body {
     font-family: 'Mukta Malar', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1.5rem;
     color: black;
     margin:0 auto; 
 }
+
+/*this adds the blur to image loading*/
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 2s;
+  }
+
+
 
 header {
     background-color: #D2F6CB;
@@ -85,9 +98,27 @@ header h1 {
     font-family: 'Berkshire Swash', cursive;
     font-size: 1.5rem;
     color: #C36276;
-    text-shadow: 2px 2px 1px  grey;
+    text-shadow: 2px 2px 1px #DDA6B1;
     padding: 0px;
     margin: 0px;
+    line-height: 2rem;
+}
+
+#real-freshy {
+   text-align: center;
+}
+
+#peaches-sm {
+    border-radius: 1rem;
+    max-width: 300px;
+}
+
+#real-freshy p {
+    text-align: center;
+}
+
+#peaches-lg {
+    display: none;
 }
 
 #fruity {
@@ -133,7 +164,33 @@ header h1 {
     font-family: 'Berkshire Swash', cursive;
     font-size: 1.5rem;
     color: #C36276;
-    text-shadow: 2px 2px 1px  grey;
+    text-shadow: 2px 2px 1px #DDA6B1;
+}
+
+#mission a {
+    display: none;
+}
+
+#mission img{
+  
+    align-self: center;
+    max-width: 300px;
+    margin: 0rem;
+    border-radius: 1rem;
+}
+
+#berries {
+    display: none;
+}
+
+#area-info img {
+    max-width: 300px;
+    border-radius: 1rem;
+}
+
+#store img {
+    max-width: 300px;
+    border-radius: 1rem;
 }
 
 footer {
@@ -213,8 +270,216 @@ footer {
     margin-top: 2rem;
 }
 
+
+
+
+
 /***************************Fresh Page*******************************/
 
+#formy {
+    margin-left: 3%;
+    margin-right: 3%;
+    
+
+}
+
+#notfresh {
+    display: none;
+}
+
+.formheader {
+	font-size: 1.5em;
+	padding-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: -1em;
+	color: #C36276;
+    text-align: center;
+	
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 3px solid #D2F6CB;
+    border-radius: 10px;
+    padding: .5rem 2%;
+
+}
+
+form legend {
+    color: #C36276;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+	padding-bottom: .5rem;
+    color: #C36276;
+    font-size: 1rem;
+}
+
+form label.top {
+	padding-bottom: 1rem;
+}
+
+.formlabelpad {
+	padding-bottom: .5em;
+	background-color: lime;
+
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: 2rem;
+    color:#555;
+}
+
+#submitForm {
+    border: none;
+    background-color: #DDA6B1;
+    color:black;
+    border-radius: 1rem;
+    padding: .50rem .75rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+	font-size: 1rem;
+    text-align: center;
+
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #C36276;
+    color:whitesmoke;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+	box-shadow: 10px 10px 5px #555;
+	font-size: 1.5em;
+}
+
+#specs {
+    background-color: #F0FCEE;
+    padding: 1rem;
+    border-radius: 1rem;
+}
 
 
+form label.top input:required {
+    border-left: #C36276 solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: #D2F6CB solid 6px;
+}
+
+
+.tell input {
+	padding: 3rem;
+	width: 30em;
+	height: 30em;
+
+}
+
+textarea.tell {
+	padding-top: 1em;
+	padding-left: 1em;
+	border: none;
+	
+}
+
+
+
+.chooseFruit {
+    font-family:'Mukta Malar', sans-serif;
+    font-size: 16px;
+    color: #C36276;
+    
+}
+
+.choosediv select {
+   padding: 1rem;
+   background-color: #F0FCEE;
+   margin-top: 1rem;
+   /*margin-left: 1rem;
+   align-items: center;*/
+   margin-bottom: 2rem;
+   border-radius: 1rem;
+   width: 100%;
+}
+
+.hidden2 {
+	display: none;
+}
+
+
+
+
+
+
+
+/***************************Contact Page****************************/
+.hero-contact {
+    display: none;
+    justify-content: center;
+    background-image: 
+    url("/bountiful-foods/images/smoothies-hero2.webp");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 5em;
+}
+
+#history img{
+  
+    align-self: center;
+    max-width: 300px;
+    margin: 0rem;
+    border-radius: 1rem;
+}
+
+#map iframe {
+    max-width: 300px;
+  
+}
+
+/****************************Thank You ****************************************/
+#lgpic {
+    display: none;
+    border-radius: 1rem;
+}
+
+#thanksp {
+    text-align: center;
+
+}
+
+#smpic {
+    border-radius: 1rem;
+}
+
+#medpic {
+    display: none;
+    border-radius: 1rem;
+}
+
+#thanks {
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 15rem;
+}
 

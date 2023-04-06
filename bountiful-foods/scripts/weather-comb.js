@@ -1,8 +1,10 @@
+
+const forecastTemp = document.querySelector('#forecast-temp');
 const currentTemp = document.querySelector('#temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#weatherdescr');
 const humidity = document.querySelector('#humid');
-const url =`https://api.openweathermap.org/data/2.5/weather?lat=33.16&lon=-117.35&appid=80b330444c5687d991609c5a40ea04df&units=imperial`;
+const url =`https://api.openweathermap.org/data/2.5/forecast?lat=33.16&lon=-117.35&appid=80b330444c5687d991609c5a40ea04df&units=imperial`;
 
 
 //how do i get the windchill? I need to get the speed and temp into a function somehow
@@ -24,23 +26,17 @@ async function apiFetch() {
   apiFetch();
 
 
-  function  displayResults(weatherData) {
-    currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}`;
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  function  displayResults(forecastData) {
+    currentTemp.innerHTML = `${forecastData.main.temp.toFixed(0)}`;
+    const iconsrc = `https://openweathermap.org/img/w/${forecastData.weather[0].icon}.png`;
     
-    humidity.innerHTML = `${weatherData.main.humidity.toFixed(0)}`
-    const desc = weatherData.weather[0].description;
+    humidity.innerHTML = `${forecastData.main.humidity.toFixed(0)}`
+    const desc = forecastData.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
+    forecastTemp.innerHTML = `${forecastData.main.temp.toFixed(0)}`;
    
     
   }
 
-  
-     
-
- 
-  
-
- 

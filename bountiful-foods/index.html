@@ -23,9 +23,9 @@
              </div>
             <div id="socials-topnav">
                <nav class="top-nav">
-                    <a id="home" href="#">Home</a>
-                    <a id="fresh" href="#">Fresh</a>
-                    <a id="about" href="#">About</a>
+                    <a id="home" href="index.html">Home</a>
+                    <a id="fresh" href="fresh.html">Fresh</a>
+                    <a id="about" href="about.html">About</a>
                </nav>
                
                <div class="top-socials">
@@ -40,39 +40,79 @@
         <main>
             <div class="hero">
                <div class="hero-text">
-                <a href="fresh">Order Now</a>
+                <a href="fresh.html">Order Now</a>
                </div>
             </div>
             
             <div class="split-grid">
-              <div id="area-info" class="big-content">
-                 <h2>Area Info</h2>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              </div>
+        
 
               <div id="mission" class="big-content">
-                <h3>Our Mission</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                <a href="fresh">Order Here</a>
+                <h3>Freshness: Our Mission</h3>
+                <p>Fresh, healthy fruits and veggies are our passion here at Bountiful Foods. We source only the very best produce directly
+                   from local growers as well as a few well vetted national and international suppliers. You can rest assured that
+                   all of our delicious wares are picked at the peak of freshness to maximize their nutritional value and flavor. Come
+                   and see us in our store order by phone or online. Let us make you something fresh!</p>
+                <picture>
+                  <img src ="images/placeholder-real.png" data-src="images/smoothie-sm-crop.jpg" alt="smoothie fruit drinks" >
+                </picture>
+                
+                <a href="fresh.html">Make Your Fruit Drink</a>
+                <picture>
+                  <img src ="images/placeholder-real.png" data-src="images/berries.jpg" alt="berries" >
+                </picture>
+          
+                <p>Berries, berries everywhere! Packed with antioxidants and flavor, Bountiful Foods boasts the best berries around. Locally 
+                  grown just outside of Carlsbad, these truly are nature's candy. Our three berry juice smoothie is the best around!
+                </p>
+             
               </div>
+
+              <div id="area-info" class="big-content">
+                <h2>So Cal Spotlight: Solana Beach</h2>
+                <p>We proudly serve the Southern California Coast. From the beaches to the hiking trails, our fresh fruit smoothies
+                 will give you energy for your explorations.
+                </p>
+                
+                <picture>
+                  <img src ="images/placeholder-real.png" data-src="images/beach-fam-sm-crop.jpg" alt="beach view">
+                </picture>
+
+                <p>Solana Beach has a long history as a community. Situated on the north coast of San Diego County (only 30 minutes from
+                  downtown San Diego), this lovely community is full of seaside character.
+                   Founded in 1902 by Colonel Ed Fetcher who had the foresight to buy just over 200 acres
+                   from local farmer George H. Jones, Solana Beach has grown into a tourist destination with an artistic flair.
+                   The Cedros Design District features well-known designers. It may be the beauty of the location that inspires their work</p>
+                
+               
+                <picture>
+                  <img src ="images/placeholder-real.png" data-src="images/beach-birds-500.jpg" alt="beach with birds">
+                </picture>
+                 <p>Speaking of natural beauty, Solana Beach boasts beautiful beaches where you can stroll, surf, and soak in the sun.
+                    Tide Beach Park, Solana Beach County Park, and Fletcher Cove Beach Park are ready for you to explore. </p>
+                 
+                 <p>While you're enjoying all that Solana Beach has to offer, we'd love to bring you a healthy fresh fruit drink to fuel the fun. </p>
+                
+             </div>
 
               <div id="store" class="big-content">
                 <h4>Our Store</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <p>Our storefront is located in downtown Carlsbad. Inside you'll find row after row of the freshest produce imaginable.
+                  Come on in to find all you need to make memorable meals. We can help you find just thie right combination of flavors for a 
+                  fresh fruit drink too. We'll be happy to see you! </p>
+                <picture>
+                    <img src ="images/placeholder-real.png" data-src="images/open-500.jpg" alt="open sign">
+                </picture>
               </div>
 
               <div id="deliver" class="big-content">
                 <h5>We Deliver!</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <p>Bountiful Foods has 10 delivery trucks ready and waiting to deliver to you in the Southern California Coast area. 
+                   Packed full with fresh fruits, veggies and drinks, our drivers are happy to bring your orders.
+                   Just call or fill out an order here and we'll be in our way...
+                </p>
                 <div id="fruity">
-                  <a href="fresh">Let Us Bring You Your Creation</a>
+                  <a href="fresh.html">Let Us Bring You Your Creation</a>
                 </div>
               </div>
 
@@ -85,18 +125,32 @@
                   </figure>
                    <p class="weatherinfo">Current Temp: <span id="temp"></span> °F</p>
                    <p class="weatherinfo">Humidity: <span id="humid"></span> %</p>
-              </div>
+               </div>
 
-              <div id="forecast">
+               <div id="forecast">
                  <p id="forecast-title">3 Day Forecast</p>
-                 <div class="forecast3">Forecast Here:</div>
+                 <div id="forecast-div">Forecast Here:</div>
+                 <div id="temp2">Forecast Temp: <span id="forecast-temp"></span></div>
+               </div>
+
+               </div>
+
+              <div id="real-freshy" class="big-content">
+               <div id="freshy-text">
+                <p id="fresh-title">Fresh Factor</p>
+                <p class="visitlabel">Number of your visits to this page: <span id="visits"></span></p>
+                <p>Thank you...</p>
+               </div>
+
+               <picture>
+                <img src ="images/placeholder-real.png" data-src="images/peaches-sm.jpg" alt="peaches" id="peaches-sm">
+               </picture>
+
+               <picture>
+                <img src ="images/placeholder-real.png" data-src="images/peaches.jpg" alt="peaches" id="peaches-lg">
+               </picture>
               </div>
 
-                <div id="freshy">
-                  <p id="fresh-title">Fresh Factor</p>
-                  <p># of Drinks You've Ordered <span>4</span></p>
-                </div>
-              </div>
             </div>
 
         </main>
@@ -127,13 +181,18 @@
         
          <p id="modified"> This document was last modified: <span id="datemod"></span></p>
 
+         <a  href="sources.html" target="_blank" >Sources</a>
+
 
 
 
 
        </footer>
-       
+       <script src="scripts/lazy-loading.js"></script>
+      
        <script src="scripts/weather.js"></script>
+       <!--<script src="scripts/forecast.js"></script>-->
+       <script src="scripts/visits.js"></script>
        <script src="scripts/lastmod.js"></script>
 
 

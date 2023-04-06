@@ -1,5 +1,8 @@
 @media only screen and (min-width: 1100px) {
    
+    body {
+        line-height: 2rem;
+    }
 
     .top-socials {
         display: flex;
@@ -29,6 +32,15 @@
     }
  
 
+    .big-content h2, h3, h4, h5, h6 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    #fresh-title, #forecast-title {
+        font-size: 2rem;
+    }
+
     #weather-factor {
         flex-direction: row
       
@@ -38,6 +50,27 @@
         margin: .3rem;
         padding: 2rem;
     }
+
+    #area-info img {
+        max-width: 400px;
+       
+    }
+
+    #store img {
+        max-width: 400px;
+    }
+
+    #mission img{
+        max-width: 450px;
+        margin-top: 2rem;
+    }
+
+   /* #mission a {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+*/
+
 
     #contact {
         margin-left: 3rem;
@@ -55,6 +88,112 @@
         font-size: 1.5rem;
     }
 
+    /**************Grid for large page**************/
+
+.split-grid  {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 43%;
+    grid-template-rows: auto;
+    column-gap: .5rem;
+    row-gap: .5rem;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    margin-right: .5rem;
+    
+}
+
+.big-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#mission {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+   
+}
+
+#weather-factor {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+
+}
+
+#area-info {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#store  {
+    display: flex;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#deliver  {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+#real-freshy {
+    /*flex-direction: column;
+    justify-self: flex-start;*/
+    
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+}
+
+
+
+/***********Contact Page****************************/
+#history {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   
+}
+
+#map {
+
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+#history img {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/*************************Thanks*************************/
+#lgpic {
+    display: flex;
+}
+
+#thanksp {
+    text-align: center;
+    font-size: larger;
+}
+
+#medpic {
+    display: none;
+}
 
 
 
