@@ -51,13 +51,16 @@ header h1 {
 
 .top-nav a {
     text-decoration: none;
-    color: #ffe65a;
-    background-color: #C36276;
+    color: black;
+   
+    background-color: #DDA6B1;
     padding: .75rem;
     margin-right: .75rem;
     border-radius: 1rem;
-    border-color: none;
+   
 }
+
+
 
  
 
@@ -79,13 +82,14 @@ header h1 {
   }
   
   .hero-text  a {
-      color: #ffe65a;
+      color: black;
       font-size: 2em;
       padding: 1em;
       text-decoration: none;
-      background-color: #C36276;
+      background-color: #DDA6B1;
       border-radius: 3rem;
   }
+ 
 
   #contact {
       display: flex;

@@ -64,14 +64,14 @@ header h1 {
 
 .top-nav a {
     text-decoration: none;
-    color: #ffe65a;
-    background-color: #C36276;
+    color: black;
+    background-color: #DDA6B1;
     font-size: 16px; 
     font-weight: bold;
     padding: 1.5rem;
     margin-right: 1.5rem;
     border-radius: 3rem;
-    border-color: none;
+   
 }
 
 .top-socials img {
@@ -194,7 +194,7 @@ header h1 {
 }
 
 footer {
-    background-color: #DDA6B1;
+    background-color: #E9C4CB;
     margin-top: 2rem;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
@@ -213,7 +213,7 @@ footer {
 #logo-foot-p {
     font-family: 'Berkshire Swash', cursive;
     font-size: 1.2rem;
-    color: #FFE65A; 
+    color: white; 
     padding-right: 1.6rem; 
     text-shadow: 2px 2px 1px black; 
 }
